@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Orbitron:wght@500;800&display=swap');
+
+*{
+    margin: 0%;
+}
+
+div.container{
+    background-color: black;
+    border: 1px solid black;
+    height: 100%;
+    width: 95%;
+    margin: auto;
+}
+
+#header{
+    text-align: center;
+    color: white;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 1.8rem;
+    background-color: rgb(66, 65, 65);
+    margin: 20px 20px;
+    background-image: radial-gradient(
+        circle at center 210px,
+      rgb(126, 39, 39) 0.00000001px,
+      rgb(66, 65, 65) 50%);
+    border-radius: 20px; 
+    font-family: 'Orbitron', sans-serif;
+}
+#header:hover{
+    background-image: radial-gradient(
+        circle at center 210px,
+      rgb(126, 39, 39) 0.00000001px,
+      rgb(78, 77, 77) 50%);
+}
+span{
+    margin-left: 10px;
+    color: red;
+    font-family: 'Orbitron', sans-serif;
+}
+#header img{
+    margin-top: 25px;
+    margin-bottom: 10px;
+    width: 150px;
+    border: 2px outset red; 
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px rgba(255, 0, 0, 0.452);
+}
+.par2{
+    font-size: 15px;
+    margin: 10px 10px 10px 10px;
+    color: white;
+    text-align: justify;
+    padding: 10px 100px 10px 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+ul{
+    text-align: left;
+    font-size: 15px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    line-height: 25px;
+    padding: 10px 100px 0px 120px;
+}
+h2{
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.842);
+    font-family: 'Kaushan Script', cursive;
+    text-align: left;
+    padding: 10px 10px 0px 100px;
+}
+
+#footer{
+    text-align: center;
+    font-size: 15px;
+    margin: auto;
+    padding: 30px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#footer-link{
+    letter-spacing: 1.5px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: aliceblue;
+    border: 3px solid goldenrod;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: black;
+    font-size: 20px;
+}
+
+#footer-link:hover{
+    background-color: gray;
+    color: red;
+}
