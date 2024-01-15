@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Netflix</title>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1>NET<span>FLIX</span></h1>
+            <p>Thank you for signing up at Netflix. Tell us more about your self</p>
+        <div id="form">
+            <form action="../result.html">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+
+                <label for="age">Age:</label><br>
+                <input type="text" id="age" name="age" placeholder="Enter your age"><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="text" id="emil" name="email" placeholder="Enter your email"><br><br>
+
+                <label for="contenttype">Content type:</label><br><br>
+                <select name="contenttype" id="contenttype">
+                    <option value="Series">Series</option>
+                    <option value="Korku">Korku</option>
+                    <option value="Komedi">Komedi</option>
+                    <option value="Aksiyon">Aksiyon</option>
+                    <option value="Macera">Macera</option>
+                    <option value="Belgesel">Belgesel</option>
+                </select><br><br>
+
+                <input type="checkbox" id="Comedy" name="Comedy">
+                <label for="Comedy">Comedy:</label><br>
+
+                <input type="checkbox" id="action" name="action">
+                <label for="action">Action:</label><br>
+
+                <input type="checkbox" id="romance" name="romance">
+                <label for="romance">Romance:</label><br>
+
+                <p>Gender:</p>
+                <input type="radio" id="male" name="male">
+                <label for="male">Male:</label><br>
+
+                <input type="radio" id="female" name="female">
+                <label for="female">Female:</label><br>
+
+                <input type="radio" id="other" name="other">
+                <label for="other">Other:</label><br><br>
+
+                <label for="feedback">Feed Back</label><br>
+                <textarea name="feedback" id="feedback" cols="30" rows="5"></textarea><br><br>
+
+                <input type="submit" id="button" value="Submit">
+            </form>
+        </div>
+       </div>
+    </div>
+    
+</body>
+</html>
