@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+}
+
+#reset{
+    margin-left: 5px;
+}
+#submit{
+    margin-left: 20px;
+}
+
+fieldset{
+    border: 2px solid ;
+    margin: 25px;
+}
+   
+#id{
+    margin-left: 6px;
+    margin-top: 5px;
+}
+#name{
+    margin-left: 80px;
+    margin-top: 5px;
+}
+#surname{
+    margin-left: 62px;
+    margin-top: 5px;
+}
+#age{
+    margin-left: 92px;
+    margin-top: 5px;
+    max-inline-size: 50px;
+}
+#email{
+    margin-left: 75px;
+    margin-top: 5px;
+}
+#photo{
+    margin-left: 50px;
+    margin-top: 5px;
+}
+h3{
+    margin-top: 0%;
+    margin-left: 50px;
+}
+#par1{
+    margin-top: 15px;
+}
+#date{
+    margin-left: 40px;
+}
+#experience{
+    margin-left: 100px;
+}
+#dateofexperience{
+    display: flex;
+    margin-top: 15px;
+}
+#langprog{
+    margin-top: 10px;
+
+}
+#progcontainer{
+    display: flex;
+}
+#labellang{
+    margin-top: 50px;
+}
+#selectlang{
+    margin-left: 95px;
+}

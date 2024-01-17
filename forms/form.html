@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="form-style.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <div>
+      <h1>SINYOUR Desing Program Installation and Sales Contract</h1>
+      <form action="result.html">
+        <div>
+          <fieldset>
+            <legend>Contract Confirmation</legend>
+            <input
+              type="checkbox"
+              name="confirmation"
+              id="confirmation"
+              required
+            />
+            <label for="confirmation"
+              >I accept the accuracy of the following information and accept the
+              contract</label
+            ><br /><br />
+            <input type="submit" id="submit" value="Save Form" />
+            <input type="reset" id="reset" value="Clear Form" />
+          </fieldset>
+        </div>
+        <div>
+          <fieldset>
+            <legend>Personal Information</legend>
+            <label for="id">Form Security ID: </label>
+            <input
+              type="text"
+              id="id"
+              name="security-id"
+              placeholder="asdfgh"
+            /><br />
+
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" /><br />
+
+            <label for="surname">Surname: </label>
+            <input type="text" id="surname" name="surname" /><br />
+
+            <label for="age">Age: </label>
+            <input
+              type="number"
+              id="age"
+              name="age"
+              maxlength="4"
+              size="4"
+            /><br />
+
+            <label for="email">E-mail: </label>
+            <input type="email" id="email" name="email" /><br />
+
+            <label for="photo">Add Photo: </label>
+            <input
+              type="file"
+              id="photo"
+              class="bar"
+              value="Select "
+              name="photo"
+            /><br />
+          </fieldset>
+        </div>
+        <div>
+          <fieldset>
+            <legend>Other Information</legend>
+            <h3>This Section Includes Professional experience</h3>
+            <label for="date">Date Of Entry Into The Sector:</label>
+            <input type="date" id="date" name="entry-into-sector" /><br />
+            
+            <div id="dateofexperience">
+            <div id="par1">
+              <p>Experience Of Sector:</p>
+            </div>
+            
+            <div>
+              <input
+              type="radio"
+              id="experience"
+              name="experience"
+              value="1-5 year"
+            />
+            <label for="experience">1-5 Year</label><br />
+
+            <input
+              type="radio"
+              id="experience"
+              name="experience"
+              value="6-10 year"
+            />
+            <label for="experience">6-10 Year</label><br />
+
+            <input
+              type="radio"
+              id="experience"
+              name="experience"
+              value="11-15 year"
+            />
+            <label for="experience">11-15 Year</label><br />
+            
+            <input
+              type="radio"
+              id="experience"
+              name="experience"
+              value="15-over year"
+            />
+              <label for="experience">15-Over Year</label>
+            </div>
+            </div>
+
+            <div id="progcontainer">
+              <div id="labellang">
+                <label for="langprog">Programing Language:</label>
+              </div>
+              <div id="selectlang">
+                    <select name="langprog" id="langprog" size="5" multiple>
+                <option value="C#">C#</option>
+                <option value="php">PHP</option>
+                <option value="java">JAVA</option>
+                <option value="css">CSS</option>
+                <option value="python">Python</option>
+                <option value="js">JS</option>
+              </select>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Contract Copy</legend>
+            <textarea name="contractcopy" id="contractcopy" cols="50" rows="5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium inventore dolore suscipit, facilis quis corrupti quo? Dolores pariatur incidunt saepe vitae omnis nihil explicabo libero repudiandae aut sapiente nobis, quibusdam assumenda et optio sunt veritatis quasi enim nisi illo officia provident deserunt ut perferendis? Saepe aliquam dolore iure perferendis adipisci!</textarea>
+          </fieldset>
+          <fieldset class="fieldset">
+            <legend>Meil List</legend>
+            <label for="maillist">I Want To Join The Mailing List</label>
+            <input type="radio" id="maillist" name="maillist"><br>
+            <label for="maillist2">I Don't Want To Join The Mailing List</label>
+            <input type="radio" id="maillist2" name="maillist">
+          </fieldset>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

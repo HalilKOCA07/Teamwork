@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Caprasimo&family=Orbitron&family=Pacifico&family=Shadows+Into+Light&display=swap');
+
+/* font-family: 'Acme', sans-serif;
+font-family: 'Caprasimo', serif;
+font-family: 'Orbitron', sans-serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Shadows Into Light', cursive; */
+
+ul.language{
+    /* background-color: aqua; */
+    width: 30%;
+    margin-left: 60px;
+    list-style-type: none;
+    list-style-position: inside;
+    font-family: 'Satisfy', cursive;
+    color: blue;
+    font-size: 1.2rem;
+    
+}
+ul.language li:hover{
+    background-color: orange;
+    color: brown;
+}
+ul.language li{
+    background-color: rgba(243, 207, 140, 0.623);
+    margin: 5px;
+    height: 25px;
+    border: 2px solid rgb(252, 164, 0);
+    border-left: 20px solid rgb(252, 164, 0);
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    background-image: linear-gradient(90deg, rgba(230, 223, 184, 0.514), rgba(255, 176, 7, 0.877));
+}
+
+ul.language li::before{
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 15px;
+    mask-image: url(img/house-svgrepo.svg);
+    background-color: rgb(252, 101, 0);
+    mask-size: cover;
+    margin-right: 10px;
+    padding-right: 10px;
+}
+
+h1{
+    color: brown;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 10px;
+    margin: 0px 125px;
+    background-color: rgba(219, 207, 140, 0.753);
+    width: 200px;
+    text-align: center;
+    border-radius: 15px;
+    border: 3px inset brown;
+    background-image: linear-gradient(90deg, rgba(230, 223, 184, 0.514), rgba(255, 176, 7, 0.877));
+}
+h1:hover{
+    background-color: brown;
+    color: rgba(219, 207, 140, 0.753);
+}
+
+h2{
+    font-size: 35px;
+    margin-left: 120px;
+    color: fuchsia;
+}
+h2 i{
+    color: blue;
+}
+
+ul.pseudo{
+    /* background-color: rgb(114, 44, 23); */
+    width: 40%;
+    margin-left: 70px;
+    margin-top: -20px;
+}
+
+ul.pseudo li:first-child{
+    color: brown;
+    font-size: 1.2rem;
+    font-family: 'Caprasimo', serif;
+}
+
+ul.pseudo li:nth-child(4){
+    color: rgb(252, 9, 252);
+    font-size: 1.2rem;
+    font-family: 'Acme', sans-serif;
+}
+
+ul.pseudo li:nth-child(odd){
+    background-color: rgb(252, 106, 81);
+    font-size: 1.2rem;
+    font-family: 'Pacifico', cursive;
+    color: rgb(62, 96, 126);
+    letter-spacing: 4px;
+    padding-left: 15px;
+    border-radius: 15px;
+}
+ul.pseudo li:nth-child(odd):hover{
+    background-color: rgb(248, 161, 161);
+}
+ul.pseudo li:nth-child(odd):active{
+    background-color: rgb(145, 145, 167);
+}
+
+ul.pseudo li:nth-child(even){
+    background-color: rgb(248, 161, 161);
+    font-size: 1.3rem;
+    font-family: 'Shadows Into Light', cursive;
+    color: black;
+    letter-spacing: 3px;
+    padding-left: 15px;
+    border-radius: 15px;
+}
+ul.pseudo li:nth-child(even):hover{
+    background-color: rgb(252, 106, 81);
+}
+ul.pseudo li:nth-child(even):active{
+    background-color: rgb(145, 145, 167);
+}
+
+#name{
+    margin-left: 2%;
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 25px;
+    padding-left: 20px;
+    color: blueviolet;
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+}
+input#name:hover{
+    background-color: rgb(139, 192, 192);
+    font-family: 'Orbitron', sans-serif;
+    color: aliceblue;
+    border: 2px dashed purple;
+}
+input#name:active{
+    background-color: rgb(185, 118, 248);
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 4px;
+    text-transform: capitalize;
+    border: 3px dotted rgb(0, 255, 0);
+}
+label{
+    margin-left: 10%;
+}

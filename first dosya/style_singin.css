@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+.singin {
+  margin: center;
+  margin-top: 15%;
+  text-align: center;
+}
+input{
+  margin: 10px;
+}
+#submit{
+    width: 15vh;
+    height: 5vh;
+    border-radius: 50px;
+    background-color: black;
+    color: aliceblue;
+    font-size: large;
+}
+
+
+#container {
+  background-color: orangered;
+  max-width: 600px;
+  background: linear-gradient(300deg, rgb(255, 103, 2), #ff985bc9);
+}
+
+#div1 {
+  display: flex;
+  margin-left: 15px;
+}
+#div2 {
+  display: flex;
+  margin-left: 15px;
+}
+#div3 {
+  display: flex;
+  margin-left: 15px;
+}
+#div11 {
+  border: none;
+  margin: 20px 20px;
+  padding: 50px 55px;
+  box-sizing: border-box;
+}
+#div12 {
+  border: 5px dotted white;
+  margin: 20px 20px;
+  padding: 50px 50px;
+  box-sizing: border-box;
+}
+#div13 {
+  border: 5px dashed white;
+  margin: 20px 20px;
+  padding: 50px 50px;
+  box-sizing: border-box;
+}
+#div21 {
+  border: 5px solid white;
+  margin: 20px 20px;
+  padding: 50px 50px;
+  box-sizing: border-box;
+}
+#div22 {
+  border: 5px double white;
+  margin: 20px 20px;
+  padding: 50px 50px;
+  box-sizing: border-box;
+}
+#div23 {
+  border: 5px groove white;
+  margin: 20px 20px;
+  padding: 50px 50px;
+  box-sizing: border-box;
+}
+#div31 {
+  border: 5px ridge white;
+  margin: 20px 20px;
+  padding: 50px 50px;
+  box-sizing: border-box;
+}
+#div32 {
+  border: 5px inset white;
+  margin: 20px 20px;
+  padding: 50px 55px;
+  box-sizing: border-box;
+}
+#div33 {
+  border: 5px outset white;
+  margin: 20px 20px;
+  padding: 50px 55px;
+  box-sizing: border-box;
+}
