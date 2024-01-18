@@ -43,6 +43,12 @@ fieldset{
     margin-left: 50px;
     margin-top: 5px;
 }
+/* #photo::-webkit-file-upload-button{
+    visibility: hidden;
+} */
+input[type='file'] {
+    color: rgba(0, 0, 0, 0);
+}
 h3{
     margin-top: 0%;
     margin-left: 50px;
