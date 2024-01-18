@@ -43,7 +43,7 @@ fieldset{
     margin-left: 50px;
     margin-top: 5px;
 }
-/* #photo::-webkit-file-upload-button{
+/* #photo::-webkit-file-upload-button{        //for hidding the button
     visibility: hidden;
 } */
 input[type='file'] {

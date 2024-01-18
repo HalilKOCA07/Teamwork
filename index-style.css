@@ -51,3 +51,37 @@ img{
     width: 100px;
 }
 
+.asidebutton{
+    background-color: aqua;
+    color: aliceblue;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 10px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer
+}
+.aside1{
+    position: relative;
+    display: inline-block;
+}
+.aside2{
+    display: none;
+    position: absolute;
+    right: 0%;
+    background-color: brown;
+    z-index: 1;
+}
+.aside2 a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.aside2 a:hover{
+    background-color: blue;
+}
+.aside1:hover .aside2{
+    display: block;
+}
+
