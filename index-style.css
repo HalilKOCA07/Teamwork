@@ -51,37 +51,46 @@ img{
     width: 100px;
 }
 
-.asidebutton{
-    background-color: aqua;
-    color: aliceblue;
-    width: 100%;
-    padding: 10px;
-    margin: 5px 10px;
-    font-size: 20px;
-    border: none;
-    cursor: pointer
-}
-.aside1{
-    position: relative;
-    display: inline-block;
-}
-.aside2{
-    display: none;
-    position: absolute;
-    right: 0%;
-    background-color: brown;
-    z-index: 1;
-}
-.aside2 a{
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-.aside2 a:hover{
-    background-color: blue;
-}
-.aside1:hover .aside2{
-    display: block;
+aside{
+    border: 1px solid;
+    width: 30%;
+    height: 80%;
 }
 
+ul{
+    list-style: none;
+    background-color: aqua;
+}
+
+ul li{
+    display: block;
+    position: relative;
+}
+
+ul li a {
+    display: block;
+    padding: 20px 25px;
+    color: aliceblue;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+}
+
+ul li ul.htmldropdown li {
+    display: block;
+}
+ul li ul.htmldropdown {
+    width: 100%;
+    background-color: blue;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+ul li a:hover{
+    background-color: blueviolet;
+}
+
+ul li:hover ul.htmldropdown {
+    display: block;
+}
