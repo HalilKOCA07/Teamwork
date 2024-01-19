@@ -20,6 +20,9 @@ input{
 
 
 #container {
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgb(3, 27, 65);
+  margin: 10% auto;
   background-color: orangered;
   max-width: 600px;
   background: linear-gradient(300deg, rgb(255, 103, 2), #ff985bc9);

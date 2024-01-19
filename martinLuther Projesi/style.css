@@ -40,7 +40,7 @@ span{
 #header img{
     margin-top: 25px;
     margin-bottom: 10px;
-    width: 150px;
+    width: 25vh;
     border: 2px outset red; 
     border-radius: 15px;
     box-shadow: 3px 3px 5px rgba(255, 0, 0, 0.452);
