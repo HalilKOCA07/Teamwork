@@ -76,10 +76,10 @@ ul li a {
     font-size: 20px;
 }
 
-ul li ul.htmldropdown li {
+ul li ul.dropdown li {
     display: block;
 }
-ul li ul.htmldropdown {
+ul li ul.dropdown {
     width: 100%;
     background-color: blue;
     position: absolute;
@@ -91,6 +91,6 @@ ul li a:hover{
     background-color: blueviolet;
 }
 
-ul li:hover ul.htmldropdown {
+ul li:hover ul.dropdown {
     display: block;
 }
