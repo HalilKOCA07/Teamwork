@@ -8,47 +8,53 @@
 
 .container{
     border-radius: 10px;
-    background-image: linear-gradient(90deg, rgb(219, 0, 37), rgb(93, 192, 47));
+    background-image:linear-gradient(to left, rgba(255, 255, 255, 0.644), rgba(255, 255, 255, 0.637)), url(images/logo-clarusway.png);
 }
 
 h1{
     text-align: center;
     font-family: 'Rubik Burned', system-ui;
     font-size: 13vh;
-    color: beige;
+    color: rgb(66, 66, 45);
 }
 
 .row1{
     background-color: aquamarine;
     display: flex;
-    margin: 1% 10%;
+    margin: 1% auto;
     width: 80%;
-    background-image: linear-gradient(90deg, rgb(93, 192, 47),
-    rgb(219, 0, 37));
+    height: 30vh;
+    background-image: linear-gradient(90deg, rgb(229, 175, 175),
+    rgb(241, 60, 60));
     border-radius: 20px;
+    transition: 2sn;
+    box-shadow: 2px 2px 3px rgb(28, 16, 16);
 }
 
 .row1:hover{
-    margin: 1% 10%;
-    width: 82%;
+    width: 90%;
+    height: 35vh;
+    transition: 1s;
 }
 
 img{
     margin: 20px;
-    width: 35vh;
     border-radius: 15px;
-    border: 2px outset white;
+    border: 2px inset rgb(69, 17, 17);
 }
 
-img:hover{
+/* img:hover{
     overflow: hidden;
     width: 90vh;
-}
+    transition: 2s;
+} */
 
 .row1 h3{
     padding-top: 15px;
     color: white;
     font-family: 'Kanit', sans-serif;
+    letter-spacing: 2px;
+    word-spacing: 5px;
 }
 
 .row1 p{
@@ -78,6 +84,19 @@ a{
     color: aliceblue;
     font-size: 1.2rem;
     font-family: 'Kanit', sans-serif;
+}
+
+.footer{
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-family: 'Kanit', sans-serif;
+}
+
+footer{
+    background-color: aqua;
+    margin: 2% 10% ;
+    border-radius: 10px;
 }
 
 
