@@ -55,7 +55,6 @@ nav.link a {
   color: aliceblue;
   font-family: "Kanit", sans-serif;
   letter-spacing: 3px;
-  transform-origin: ;
 }
 
 nav a:hover {
@@ -72,7 +71,7 @@ nav a:hover {
 }
 
 section.photo {
-  margin-top: 25%;
+  margin-top: 15%;
   text-align: center;
 }
 
@@ -95,7 +94,7 @@ div img:hover {
 }
 
 .contact {
-  margin-top: 25%;
+  margin-top: 15%;
   text-align: center;
 }
 .contact h2 {
