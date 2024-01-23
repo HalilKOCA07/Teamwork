@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rampart+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  border: 1px solid red;
+  position: relative;
+}
+
+header {
+  text-align: center;
+  font-family: "Bungee Shade", sans-serif;
+  font-size: 25px;
+}
+
+header h2 {
+  margin-top: -60px;
+}
+
+nav.link {
+  text-align: center;
+  word-spacing: 25px;
+  position: sticky;
+  top: 0;
+}
+
+nav.link button {
+  text-decoration: none;
+  width: 100px;
+  height: 35px;
+  background-color: sandybrown;
+  border: none;
+  border-radius: 15px;
+}
+
+nav.link a {
+  text-decoration: none;
+  color: aliceblue;
+  font-family: "Kanit", sans-serif;
+  letter-spacing: 3px;
+}
+
+.about p {
+  padding: 10%;
+  font-family: "Rampart One", sans-serif;
+  text-align: center;
+  font-size: 45px;
+}
+
+section.photo {
+  text-align: center;
+}
+
+section.photo h2 {
+  display: inline-block;
+  border-bottom: 2px solid rgb(185, 42, 42);
+  margin-bottom: 2%;
+  font-family: "Kanit", sans-serif;
+}
+
+div img {
+  width: 220px;
+  height: 300px;
+  border-radius: 15px;
+}
+
+div img:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.contact {
+  text-align: center;
+}
+.contact h2 {
+  display: inline-block;
+  border-bottom: 2px solid rgb(185, 42, 42);
+  margin-bottom: 2%;
+  font-family: "Kanit", sans-serif;
+}
+.contact a {
+  margin: 10px;
+  text-decoration: none;
+  font-family: "Kanit", sans-serif;
+  color: sandybrown;
+}
+
+.contact a:hover {
+  color: rgb(240, 9, 9);
+}
+
+.form {
+  text-align: center;
+}
+
+.form h3 {
+  font-family: "Kanit", sans-serif;
+  font-size: 15px;
+}
+
+form input {
+  width: 60%;
+  display: inline-block;
+  line-height: 35px;
+}
+form {
+  margin-top: 25px;
+}
+#message {
+  height: 175px;
+}
+
+#submit {
+  height: 35px;
+  margin-bottom: 20px;
+}
