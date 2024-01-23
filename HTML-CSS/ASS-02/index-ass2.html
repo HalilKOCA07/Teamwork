@@ -9,23 +9,23 @@
   </head>
   <body>
     <div class="container">
-          <header>
+          <header id="header">
       <h1>Halil KOCA</h1>
       <h2>( Sinyour )</h2>
     </header>
     <nav class="link">
-      <button><a href="#">Home</a></button>
-      <button><a href="#">About</a></button>
-      <button><a href="#">Projects</a></button>
-      <button><a href="#">Contact</a></button>
+      <a href="#header">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </nav>
-    <section class="about">
+    <section class="about" id="about">
       <p>
         Hi there 👋 I am Halil KOCA. I have a great passion for software
         development..
       </p>
     </section>
-    <section class="photo">
+    <section class="photo" id="projects">
       <h2>My Project</h2>
       <div id="photo">
         <img src="https://picsum.photos/id/684/600/400" alt="">
@@ -35,23 +35,26 @@
         <img src="https://picsum.photos/id/688/600/400" alt="">
       </div>
     </section>
-    <div class="contact">
+    <div class="contact" id="contact">
       <h2>Contact Me</h2><br>
-      <a id="git" href=""><i class="fa-brands fa-github"></i> Github</a>
-      <a id="instegram" href=""><i class="fa-brands fa-instagram"></i> Instegram</a>
-      <a id="twitter" href=""><i class="fa-brands fa-twitter"></i> Twitter</a>
-      <a id="linkedin" href=""><i class="fa-brands fa-linkedin"></i> Linkedin</a>
+      <a id="git" href="https://github.com/HalilKOCA07" target="_blank"><i class="fa-brands fa-github"></i> Github</a>
+      <a id="instegram" href="https://www.instagram.com/sinyour_07" target="_blank"><i class="fa-brands fa-instagram"></i> Instegram</a>
+      <a id="twitter" href="https://blog.dogasigorta.com/wp-content/uploads/2023/10/Twitter-Logosu-Neden-X-Oldu-1200x900.jpg" target="_blank"><i class="fa-brands fa-twitter"></i> Twitter</a>
+      <a id="linkedin" href="https://www.linkedin.com/in/sinyour/" target=""><i class="fa-brands fa-linkedin"></i> Linkedin</a>
     </div>
     <div class="form">
       <h3>Send Message</h3>
-      <form action="#">
+      <form action="result.html">
         <input type="text" id="usernme" name="username" placeholder="Username"><br><br>
         <input type="text" id="email" name="email" placeholder="Email"><br><br>
-        <input type="text" id="message" name="message" placeholder="Your Message"><br><br>
-        <input id="submit" type="submit">
+        <textarea name="comment" id="comment" cols="73" rows="10" placeholder="Your Message"></textarea><br><br>
+        <!-- <input type="" id="message" name="message" placeholder="Your Message"><br><br> -->
+        <h2>SEND</h2>
       </form>
     </div>
+    <a id="top" href="#header">Top 🔼</a>
     </div>
+    
 
   </body>
 </html>

@@ -8,14 +8,17 @@
 }
 
 .container {
-  border: 1px solid red;
+  color: aliceblue;
+  border: 1px solid rgb(31, 29, 29);
   position: relative;
+  background-color: #131e25;
 }
 
 header {
   text-align: center;
   font-family: "Bungee Shade", sans-serif;
   font-size: 25px;
+  color: aliceblue;
 }
 
 header h2 {
@@ -27,25 +30,41 @@ nav.link {
   word-spacing: 25px;
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 
-nav.link button {
+nav a {
+  display: inline-block;
   text-decoration: none;
   width: 100px;
   height: 35px;
+  text-align: center;
+  padding-top: 5px;
   background-color: sandybrown;
   border: none;
   border-radius: 15px;
 }
 
+.btn:hover {
+  opacity: 0.6;
+}
+
 nav.link a {
+  display: inline-block;
   text-decoration: none;
   color: aliceblue;
   font-family: "Kanit", sans-serif;
   letter-spacing: 3px;
+  transform-origin: ;
+}
+
+nav a:hover {
+  background-color: rgba(244, 165, 96, 0.521);
+  color: rgb(179, 106, 106);
 }
 
 .about p {
+  margin-top: 10%;
   padding: 10%;
   font-family: "Rampart One", sans-serif;
   text-align: center;
@@ -53,12 +72,13 @@ nav.link a {
 }
 
 section.photo {
+  margin-top: 25%;
   text-align: center;
 }
 
 section.photo h2 {
   display: inline-block;
-  border-bottom: 2px solid rgb(185, 42, 42);
+  border-bottom: 2px solid rgb(255, 249, 249);
   margin-bottom: 2%;
   font-family: "Kanit", sans-serif;
 }
@@ -75,11 +95,12 @@ div img:hover {
 }
 
 .contact {
+  margin-top: 25%;
   text-align: center;
 }
 .contact h2 {
   display: inline-block;
-  border-bottom: 2px solid rgb(185, 42, 42);
+  border-bottom: 2px solid rgb(255, 255, 255);
   margin-bottom: 2%;
   font-family: "Kanit", sans-serif;
 }
@@ -101,21 +122,72 @@ div img:hover {
 .form h3 {
   font-family: "Kanit", sans-serif;
   font-size: 15px;
+  margin-top: 15px;
 }
 
 form input {
+  color: aliceblue;
+  padding-left: 15px;
+  padding-right: 15px;
   width: 60%;
   display: inline-block;
   line-height: 35px;
-}
-form {
-  margin-top: 25px;
-}
-#message {
-  height: 175px;
+  background-color: #131e25;
+  border: 2px solid sandybrown;
+  border-radius: 5px;
+  text-align: center;
 }
 
-#submit {
-  height: 35px;
+#comment {
+  color: aliceblue;
+  padding-top: 10px;
+  width: 60%;
+  background-color: #131e25;
+  border: 2px solid sandybrown;
+  border-radius: 5px;
+  text-align: center;
+}
+
+form h2 {
+  display: inline-block;
+  color: white;
+  width: 60%;
+  height: 55px;
   margin-bottom: 20px;
+  font-family: "Kanit", sans-serif;
+  font-size: 30px;
+  text-align: center;
+  border: none;
+  border-radius: 7px;
+  background-color: rgba(244, 165, 96, 0.5);
+  cursor: pointer;
+  letter-spacing: 5px;
+}
+
+form h2:hover {
+  color: rgb(233, 45, 45);
+  background-color: rgba(77, 55, 2, 0.637);
+}
+
+form h2:hover::after {
+  display: inline-block;
+  content: "📨";
+  height: 65px;
+  padding-left: 10px;
+  padding-bottom: 50px;
+}
+
+#top {
+  position: fixed;
+  top: 95%;
+  left: 90%;
+  background-color: rgb(240, 128, 77);
+  width: 80px;
+  height: 40px;
+  text-decoration: none;
+  text-align: center;
+  padding: 7px;
+  font-family: "Kanit", sans-serif;
+  color: aliceblue;
+  border-radius: 10px;
 }
