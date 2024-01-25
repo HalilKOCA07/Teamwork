@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: aqua;
+  flex-basis: 100%;
+  height: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav h1 {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: blue;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: orange;
+  gap: 1rem;
+}
+
+nav ul a {
+  text-decoration: none;
+}
