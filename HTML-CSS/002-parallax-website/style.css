@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container1 {
+  background-color: aqua;
+  height: 100vh;
+  background-image: url(img/bg.jpg);
+  min-height: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.container-img {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.header h1 {
+  background-color: rgb(44, 43, 51);
+  padding: 2rem 3rem;
+  color: aliceblue;
+  letter-spacing: 0.3rem;
+  outline: 0.7rem outset purple;
+  outline-offset: 1rem;
+  border-bottom-right-radius: 2rem;
+  border-top-left-radius: 2rem;
+}
+
+.par1 {
+  text-align: center;
+  background-color: rgb(235, 235, 234);
+  font-size: 1rem;
+  padding: 20px 20px;
+}
+
+.container2 {
+  background-image: url(img/bg1.jpg);
+  background-color: aqua;
+  height: 100vh;
+  min-height: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.clarus-png img {
+  width: 30vw;
+  height: 20vh;
+}
+.par2 {
+  text-align: center;
+  background-color: rgb(68, 63, 63);
+  color: aliceblue;
+  line-height: 2rem;
+}
+
+.container3 {
+  background-image: url(img/bg2.jpg);
+  background-color: aqua;
+  height: 100vh;
+  min-height: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.container4 {
+  background-image: url(img/bg3.jpg);
+  background-color: aqua;
+  height: 100vh;
+  min-height: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.container5 {
+  background-image: url(img/bg4.jpg);
+  background-color: aqua;
+  height: 100vh;
+  min-height: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
