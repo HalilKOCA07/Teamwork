@@ -1,11 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+.container-img{
+  opacity: 0.7;
+}
+
 .container1 {
-  background-color: aqua;
   height: 100vh;
   background-image: url(img/bg.jpg);
   min-height: 100%;
@@ -22,7 +27,12 @@
 }
 
 .header h1 {
-  background-color: rgb(44, 43, 51);
+  height: fit-content;
+  width: fit-content;
+  /* font-family: 'Caveat', cursive; */
+  font-family: 'Abril Fatface', serif;
+  font-size: 2vw 5vh;
+  background-color: rgb(14, 12, 22);
   padding: 2rem 3rem;
   color: aliceblue;
   letter-spacing: 0.3rem;
@@ -32,16 +42,32 @@
   border-top-left-radius: 2rem;
 }
 
-.par1 {
+.par{
   text-align: center;
   background-color: rgb(235, 235, 234);
-  font-size: 1rem;
   padding: 20px 20px;
 }
 
+.par1{  outline: 0.7rem solid rgba(230, 159, 131, 0.534);
+  outline-offset: 1rem;}
+.par2{  outline: 0.7rem solid rgba(41, 41, 78, 0.5);
+  outline-offset: 1rem;}
+.par3{  outline: 0.7rem solid rgba(236, 154, 122, 0.534);
+  outline-offset: 1rem;}
+.par4{ outline: 0.7rem solid rgba(236, 154, 122, 0.582);
+  outline-offset: 1rem;}
+.par h2{
+  padding-top: 2rem;
+  font-family: 'Abril Fatface', serif;
+  letter-spacing: 3px;
+}
+
+.par p{
+  padding: 1rem 5rem;
+  line-height: 1.5rem;
+}
 .container2 {
   background-image: url(img/bg1.jpg);
-  background-color: aqua;
   height: 100vh;
   min-height: 100%;
   align-items: center;
@@ -54,15 +80,19 @@
   height: 20vh;
 }
 .par2 {
+  
   text-align: center;
-  background-color: rgb(68, 63, 63);
+  background-color: rgb(41, 41, 78);
   color: aliceblue;
   line-height: 2rem;
 }
 
+.par2 h2{
+  font-family: 'Abril Fatface', serif;
+}
+
 .container3 {
   background-image: url(img/bg2.jpg);
-  background-color: aqua;
   height: 100vh;
   min-height: 100%;
   align-items: center;
@@ -71,7 +101,6 @@
 }
 .container4 {
   background-image: url(img/bg3.jpg);
-  background-color: aqua;
   height: 100vh;
   min-height: 100%;
   align-items: center;
@@ -80,7 +109,6 @@
 }
 .container5 {
   background-image: url(img/bg4.jpg);
-  background-color: aqua;
   height: 100vh;
   min-height: 100%;
   align-items: center;
