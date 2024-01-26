@@ -1,35 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital@0;1&display=swap");
+
+body{
+  background-color: rgb(230, 217, 202);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
 }
 
 nav {
-  background-color: aqua;
-  flex-basis: 100%;
-  height: 5rem;
+  margin:2% 2.5%;
+  background-color: blanchedalmond;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px chocolate;
+  width: 95%;
+  height: 6rem;
   display: flex;
   flex-wrap: wrap;
 }
 
 nav h1 {
+  cursor: default;
+  font-size: 2.5rem;
+  color: brown;
   flex-basis: 100%;
   display: flex;
   justify-content: center;
-  background-color: blue;
   align-items: center;
 }
 
 nav ul {
+  margin-top: ;
   list-style-type: none;
   flex-basis: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: orange;
-  gap: 1rem;
+  gap: 5rem;
 }
 
 nav ul a {
+  padding: 0.3rem 2rem;
+  background-color:blanchedalmond;
+  color: rgb(219, 97, 9);
   text-decoration: none;
+}
+nav ul a:hover{
+  border-radius: 10px;
+  background-color: rgb(172, 140, 98);
+  color: rgb(117, 53, 53);
+}
+
+.container2 {
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+}
+
+aside {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+aside ul {
+  margin-top: 2rem;
+}
+
+aside ul li {
+  box-shadow: 3px 3px 5px chocolate;
+  margin-top: 1rem;
+  border-radius: 10px;
+  background-color: bisque;
+  list-style-type: none;
+  display: flex;
+  justify-content: start;
+  padding: 0.8rem;
+  border-bottom: 1px solid;
+}
+
+aside ul li:hover{
+  border-radius: 10px;
+  background-color: rgb(172, 140, 98);
+  color: rgb(117, 53, 53);
+}
+
+aside ul li a {
+  text-decoration: none;
+}
+
+aside h2 {
+  box-shadow: 3px 3px 5px chocolate;
+  cursor: default;
+  border-radius: 10px;
+  padding: 0.5rem 2rem;
+  background-color: rgb(241, 197, 150);
+  display: flex;
+  justify-content: center;
+}
+
+aside h2:hover{
+  background-color: rgba(241, 197, 150, 0.685);
+}
+
+main {
+  background-color: rgb(204, 253, 200);
+  gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+  border: 1rem inset rgba(210, 105, 30, 0.712);
+  box-shadow: 5px 5px 5px;
+}
+
+img {
+  cursor: pointer;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 320px;
+  height: 300px;
+  border: 1rem inset rgba(210, 105, 30, 0.822);
+  box-shadow: 5px 5px 5px;
+  padding: 0.5rem;
+}
+
+footer{
+  margin:2% 2.5%;
+  background-color: blanchedalmond;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px chocolate;
+  width: 95%;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+footer p:hover{
+  cursor: default;
+  color: red;
 }
