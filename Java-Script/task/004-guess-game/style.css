@@ -1,0 +1,29 @@
+
+
+div{
+    margin-top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h2{
+    font-size: 4rem;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: brown;
+    padding: 1rem;
+    border-radius: 25px;
+    border: 5px solid black;
+    color: beige;
+    box-shadow: 5px 5px 50px brown;
+}
+h2:hover{
+    background-color: beige;
+
+}
+
+span{
+    color: brown;
+
+}

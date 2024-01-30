@@ -27,6 +27,7 @@
 // }
 
 let pcSayi = Math.floor(Math.random() * 101);
+  document.getElementById("random").innerHTML = pcSayi;
 
 console.log(pcSayi);
 
@@ -46,6 +47,8 @@ while (i > 0) {
   } else {
     alert("Cangratulate! You are right...");
   }
+
+  
 
   i--;
 }
