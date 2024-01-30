@@ -31,12 +31,12 @@
 // }
 
 
-let pcSayi = Math.floor(Math.random() * 101)
+// let pcSayi = Math.floor(Math.random() * 101)
 
-console.log(pcSayi);
+// console.log(pcSayi);
 
-let userSayi = prompt("Guess number that computer choose")
-let i = 5
+// let userSayi = prompt("Guess number that computer choose")
+// let i = 5
 
 
 while (i > 0){
