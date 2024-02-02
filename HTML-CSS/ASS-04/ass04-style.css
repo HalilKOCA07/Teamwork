@@ -6,182 +6,19 @@
     box-sizing: border-box;
 }
 
-body {
-    cursor: default;
-    background-color: var(--blue-light-5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-
+body{
+    background-color: rgb(243, 235, 224);
+   
 }
 
 .container{
-    padding: 0.5rem 0;
+    border: 2px solid red;
     width: 90%;
-    font-family: var(--ff-poppins);
-    /* max-width: 1500px; */
-    background-color: rgb(221, 221, 221);
-    margin: 5rem;
-    box-shadow: 2px 2px 50px rgb(207, 205, 204);
-    border-radius: 5px;
-}
-
-.row{
-    padding: 6rem 0;
-    background-color: aliceblue;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-}
-
-.container section{
-    flex: 1;
-}
-
-.img{
-   
-}
-
-.img img{
-    width: 850px;
-}
-
-.img img:hover{
-    cursor: zoom-in;
-    
-}
-
-.img img:active{
-    width: 1000px;
-}
-
-.info{
-    
-}
-
-.title{
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    padding: -1px;
-
-}
-
-.info h1{
-    font-size: var(--fs-2xl);
-}
-
-.title span{
-    background-color: #2175F5;
-    color: aliceblue;
-    font-size: var(--fs-md);
-    margin-left: 0.5rem;
-    border-radius: 5px;
-    padding: 0.2rem 0.7rem;
-    font-size: 1.2rem;
-}
-
-.head h4{
-    margin-bottom: 1rem;
-   
-}
-
-article{
-    line-height: 1.7rem;
-}
-
-article p:first-child{
-    font-size: 1.5rem;
-}
-
-article p:last-child{
-    color: #3a3a3a;
-    margin-top: 1.5rem;
-    font-size:19px;
-    letter-spacing: 0.1rem;
-}
-sup{
-    font-size: 0.7rem;
-}
-
-.btn button{
-    background-color: bisque;
-    border: none;
-    border-radius: 5px;
-    margin: 0.5rem;
-    font-size: 1.3rem;
-    width: 90px;
-    padding: 5px 0;
-}
-
-.btn button:hover{
-    cursor: pointer;
-    opacity: 0.8;
-}
-
-.btn button:nth-child(2){
-    background-color: #2175F5;
-    color: aliceblue;
-}
-
-.addcard{
+    margin: 5rem auto;
     display: flex;
     justify-content: space-between;
-    padding: 3rem 2rem 2rem 0;
-}
-
-.addcard button{
-    border-radius: 5px;
-    display: flex;
-    background-color: #2175F5;
-    color: aliceblue;
-    width: 300px;
-    font-size: 1.4rem;
-    padding: 1rem;
-    white-space: nowrap;
-    justify-content: center;
-}
-
-.addcard button:hover{
-    background-color: #2176f5d2;
-    cursor: pointer;
-}
-
-.addcard button p::before{
-    content: '';
-    display: inline-block;
-    width: 22px;
-    height: 20px;
-    mask: url(img/shopping_cart_FILL0_wght400_GRAD0_opsz24.svg) no-repeat 50% 50%;
-    -webkit-mask-size: cover;
-    mask-size: cover;
-    background-color: rgb(255, 255, 255);
-    margin-right: 10px;
-    padding-right: 5px;
-}
-
-.addcard button img{
-    width: 30px;
-    color: aliceblue;
-}
-
-.addcard p{
-    font-size: 2rem;
-    
-}
-
-.addcard p sup{
-    padding: 5px;
-    font-size: 1.5rem;
-}
-
-
-/*? MEDİA QUERY */
-
-@media screen and { max-width: 1300;
-    
-    
+    padding: 2rem;
+    align-items: center;
+    box-shadow: var(--shadow-dark);
+    background-color: aliceblue;
 }
