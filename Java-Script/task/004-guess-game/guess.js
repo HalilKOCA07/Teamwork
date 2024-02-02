@@ -33,7 +33,7 @@ console.log(pcSayi);
 
 let userSayi = prompt("Guess number that computer choose");
 let i = 5;
-
+let cikis = false
 while (i > 0) {
   if (userSayi < 0 || userSayi > 100) {
     alert(`You must guess beteen 1 and 100. Remaining healt: ${i}`);
@@ -44,13 +44,15 @@ while (i > 0) {
   } else if (userSayi > pcSayi) {
     alert(`You must guess lower number. Remaining healt: ${i}`);
     userSayi = prompt("Guess number that computer choose");
-  } else {
-    alert("Cangratulate! You are right...");
   }
-
   
-
   i--;
 }
 
-alert("Game Over");
+else if (userSayi == pcSayi) {
+  alert("Cangratulate! You are right...");
+}
+
+  else {
+    alert("Game Over");
+}
