@@ -214,7 +214,10 @@ aside h3{
     padding: 0.5rem;
     display: block;
     line-height: 2rem;
-    background-color: antiquewhite;
+    background-color: rgb(108, 98, 84);
+    color: aliceblue;
+    border-radius: 5px;
+    border-bottom: 2px solid white;
 }
 
 .htmlcss-content a:hover{
