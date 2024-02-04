@@ -103,7 +103,6 @@ while (
   knownToolJs = prompt("Please! Enter your Java Script knowledge statement again.  (yes or no)");
 }
 
-
                         //! KNOWLEDGE HTML
 
 let knownToolHtml = prompt("Do you Know HTML? (yes or no)");
@@ -118,7 +117,6 @@ while (
   alert("Please! Enter 'yes' or 'no'");
   knownToolHtml = prompt("Please! Enter your HTML knowledge statement again.  (yes or no)");
 }
-
 
                         //! KNOWLEDGE CSS
 

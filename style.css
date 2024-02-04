@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=Ubuntu:ital,wght@1,400;1,500&display=swap');
 
 *{
     margin: 0;
@@ -6,17 +6,23 @@
     box-sizing: border-box;
 }
 
+html{
+    border: 1px solid;
+}
+
 body{
-    background-image: url(background-img/background.jpg);
+    border: 1px solid;
+    background-image: url(index-img/background.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-color: rgb(88, 88, 88);
+    background-color: rgba(88, 88, 88, 0.281);
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .container{
@@ -24,12 +30,15 @@ body{
     display: flex;
     justify-content: center;
     width: 90%;
+    height: 90vh;
+    /* padding-bottom: 10rem; */
     border: 1px solid;
     border-radius: 10px;
     box-shadow: 2px 2px 30px;
     margin-top: 1rem;
-    background-color: rgba(123, 131, 131, 0.952);
+    background-color: rgba(96, 136, 136, 0.952);
     flex-wrap: wrap;
+    position: relative;
 
 }
                            /*?  HEADER  */
@@ -158,10 +167,18 @@ nav a img{
     height: 70px;
 }
 
+.wellcome{
+    display: flex;
+    gap: 1rem;
+    font-size: 2rem;
+    font-family: 'Protest Guerrilla', sans-serif;
+}
+
              /*?   ASİDE */
 .first-section{
     width: 100%;
     margin-top: 2rem;
+    margin-bottom: 2rem;
     display: flex;
     flex-wrap: wrap;
 }
@@ -254,6 +271,7 @@ main{
 
 .main-img{
     display: flex;
+    position: relative;
     justify-content: center;
 }
 
@@ -262,3 +280,11 @@ main{
     box-shadow: 2px 2px 50px black;
     width: 500px;
 }
+
+            /*! PROJECTS */
+
+.photo h2{
+    background-color: aqua;
+    margin-top: 2rem;
+    position: relative;
+} 
