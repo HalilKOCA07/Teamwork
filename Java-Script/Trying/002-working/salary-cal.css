@@ -1,0 +1,17 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+table, tr, th{
+    border: 2px solid;
+}
+
+table{
+    margin: auto;
+    width: 90%;
+
+}

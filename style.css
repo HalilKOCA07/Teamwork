@@ -11,7 +11,7 @@ html{
 }
 
 body{
-    border: 1px solid;
+    /* border: 1px solid; */
     background-image: url(index-img/background.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -22,7 +22,6 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
 }
 
 .container{
@@ -30,9 +29,9 @@ body{
     display: flex;
     justify-content: center;
     width: 90%;
-    height: 90vh;
+    /* height: 90vh; */
     /* padding-bottom: 10rem; */
-    border: 1px solid;
+    /* border: 1px solid; */
     border-radius: 10px;
     box-shadow: 2px 2px 30px;
     margin-top: 1rem;
@@ -281,10 +280,17 @@ main{
     width: 500px;
 }
 
-            /*! PROJECTS */
+            /*! MY PROJECTS */
 
-.photo h2{
+.myprojects{
+    display: flex;
+
     background-color: aqua;
     margin-top: 2rem;
-    position: relative;
+    /* position: absolute; */
+    
 } 
+
+.myprojects img{
+    width: 100px;
+}
