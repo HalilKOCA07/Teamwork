@@ -136,13 +136,13 @@ let maasBodro = [
 
 // const startmonth = maasBodro.map(function(maasBodro){
 //         console.log(maasBodro.month);
-// })
 
-let bodroDocument = "";
+let bodroDocument = [];
 
 for (let i = 5; i < maasBodro.length; i++) {
-  // bodroDocument += maasBodro.push(maasBodro[i]);
-  console.log(maasBodro[i]);
+  // bodroDocument += maasBodro.push(maasBodro[i]);     const el = cars.push("Kartal")
+   bodroDocument.push(maasBodro[i, [1]])
+   console.log(bodroDocument);
 }
 
 // console.log(bodroDocument);
