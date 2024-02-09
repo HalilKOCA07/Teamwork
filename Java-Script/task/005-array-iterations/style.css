@@ -1,0 +1,23 @@
+.container{
+    background-color: rgba(199, 216, 216, 0.411);
+    width: 35%;
+    line-height: 2rem;
+    display: grid;
+    justify-content: center;
+    margin: 10rem auto;
+}
+
+.students{
+    display: flex;
+    text-align: justify;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.student{
+    background-color: rgb(180, 161, 199);
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
