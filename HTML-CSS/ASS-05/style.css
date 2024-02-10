@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+
 *{
     margin: 0%;
     padding: 0%;
@@ -28,13 +30,57 @@
     border-radius: 10px;
     /* border: 2px solid black; */
 }
-
+                /** HEAD */
 .box1{
-    height: 5rem;
-    background-color: rgb(226, 160, 37);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 12rem;
+    background-color: rgb(240, 236, 230);
     grid-column: 1/5;
     grid-row: 1/2;
+    gap: 1rem;
 }
+
+.head{
+    font-family: 'Protest Revolution', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    box-shadow: 0px 5px 20px;
+}
+
+                    /*?    NAVBAR    */
+
+                    nav{
+                        /* box-shadow: 0px 5px 20px; */
+                        display: grid;
+                        grid-template-columns: repeat(6, 1fr);
+                        flex-wrap: nowrap;
+                        width: 100%;
+                        text-align: center;
+                        /* justify-content: end; */
+                        /* align-items: center; */
+                        padding: 0.5rem 1rem;
+                        border-radius: 10px;
+                        gap: 2rem;
+                        /* margin-top: 2rem; */
+                    
+                    }
+                    
+                    nav a img{
+                        box-shadow: 0px 5px 20px;
+                        width: 60px;
+                        height: 60px;
+                    }
+                    
+                    .wellcome{
+                        display: flex;
+                        gap: 1rem;
+                        font-size: 2rem;
+                        font-family: 'Protest Guerrilla', sans-serif;
+                    }
+
+            /** MAIN */
 .box2{
     display: grid;
     justify-content: center;
@@ -126,3 +172,5 @@
     align-items: center;
 
 }
+
+
