@@ -1,0 +1,128 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+                            /** GRID */
+.container{
+    padding: 1rem;
+    /* position: absolute; */
+    box-sizing: border-box;
+    width: 85vw;
+    /* height: 100%; */
+    background-color:bisque;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr ;
+    gap: 4rem 2rem;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+}
+
+.box{
+    justify-content: center;
+    border: 1px solid black;
+    display: grid;
+    background-color: gold;
+    border-radius: 10px;
+    /* border: 2px solid black; */
+}
+
+.box1{
+    height: 5rem;
+    background-color: rgb(226, 160, 37);
+    grid-column: 1/5;
+    grid-row: 1/2;
+}
+.box2{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+    background-color: rgb(70, 240, 106);
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+
+
+.box3{
+    background-color: rgb(95, 80, 231);
+    grid-column: 3/4;
+    grid-row: 2/3;
+    height: 30rem;
+}
+.box4{
+    background-color: rgb(133, 133, 84);
+    grid-column: 4/5;
+    grid-row: 2/3;
+    height: 30rem;
+}
+.box5{
+    background-color: rgb(235, 82, 227);
+    grid-column: 1/2;
+    grid-row: 3/4;
+    height: 30rem;
+}
+.box6{
+    background-color: olive;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    height: 30rem;
+}
+.box7{
+    background-color: rgb(40, 177, 231);
+    grid-column: 3/5;
+    grid-row: 3/4;
+    height: 30rem;
+}
+.box8{
+    background-color: rgb(175, 175, 43);
+    grid-column: 1/5;
+    grid-row: 4/5;
+    height: 5rem;
+}
+
+.wrapper{
+    display: flex;
+    border: 3px solid red;
+    width: 100%;
+    height: auto;
+    /* height: 100vh; */
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+}
+
+
+                                /** IMAGE ADDING */
+       
+.content{
+    display: grid;
+    text-align: center;
+    align-items: center;
+}  
+
+.content img:hover{
+    box-shadow: 2px 2px 20px rgb(62, 175, 240);
+    width: 100%;
+    height: 53vh;
+}
+
+
+.content img{
+    box-shadow: 2px 2px 10px black;
+    width: 95%;
+    height: 50vh;
+    border-radius: 10px;
+}
+
+.mugla1 img{
+    height: 50vh;
+}
+
+.mugla1{
+    display: grid;
+    align-items: center;
+
+}
