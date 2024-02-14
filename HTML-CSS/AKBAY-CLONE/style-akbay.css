@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: antiquewhite;
+  width: 90%;
+  border: 1px solid;
+  margin: auto;
+  /* max-width: 1500px; */
+}
+
+/*?------HEADER----------*/
+
+.header {
+  align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+/** HEADER - LEFT */
+.header-top-left {
+  display: flex;
+  align-items: center;
+  color: rgb(0, 0, 223);
+  padding: 0.5rem;
+}
+
+.header-top-left span {
+  display: flex;
+  align-items: center;
+  color: blue;
+  font-size: 1.1rem;
+  margin: 0.5rem;
+}
+
+.header-top-left span i {
+  font-size: 2rem;
+  margin-right: 10px;
+}
+
+.fa-whatsapp {
+  margin-left: 2rem;
+}
+
+.header-top-left span:hover {
+  color: orange;
+  .fa-solid {
+    color: orange;
+  }
+}
+
+/** HEADER - RIGHT */
+
+.header-top-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-top-right a {
+  color: rgb(41, 39, 39);
+  text-decoration: none;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.header-cargo {
+  padding: 10px;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+.header-cargo i {
+}
+
+.header-uyeol span,
+.header-uyeol {
+  padding-left: 20px;
+  color: orange;
+}
+
+.header-giris {
+  padding-left: 5px;
+}
+
+.header-sepet {
+  border-left: 2px solid black;
+}

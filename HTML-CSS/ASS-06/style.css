@@ -62,7 +62,7 @@
 .box1-2 a::before {
   content: "";
   position: absolute;
-  right: 0;
+  left: 0;
   bottom: 0;
   width: 0;
   height: 2px;
