@@ -15,6 +15,7 @@
 /*?------HEADER----------*/
 
 .header {
+  height: 35px;
   align-items: center;
   width: 100%;
   display: flex;
@@ -25,7 +26,6 @@
   display: flex;
   align-items: center;
   color: rgb(0, 0, 223);
-  padding: 0.5rem;
 }
 
 .header-top-left span {
@@ -55,6 +55,7 @@
 /** HEADER - RIGHT */
 
 .header-top-right {
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,18 +69,12 @@
   align-items: center;
 }
 
-.header-cargo {
-  padding: 10px;
-  border-left: 2px solid black;
-  border-right: 2px solid black;
-}
-
-.header-cargo i {
+.uyeol{
+  display: flex;
 }
 
 .header-uyeol span,
 .header-uyeol {
-  padding-left: 20px;
   color: orange;
 }
 
