@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+
+
+
+.ilpar-logo{
+    width: 100px;
+}
+
+.aside-left-img{
+    box-shadow: 2px 2px 10px !important;
+    height: 500px;
+}
+
+.main-urun-img{
+    /* box-shadow: 2px 2px 10px !important; */
+    height: 300px;
+    width: 80% !important;
+}
+
+.aside-left-p{
+    margin-top: 00px;
+    text-align: center;
+    font-family: "Protest Strike", sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    color: rgb(51, 9, 236);
+}
+
+.aside-left:hover p{
+    color: brown;
+}
+
