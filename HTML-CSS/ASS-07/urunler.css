@@ -17,6 +17,11 @@
     width: 80% !important;
 }
 
+.col-4 {
+    flex: 0 0 auto;
+    width: 20% !important; 
+  }
+
 .aside-left-p{
     margin-top: 00px;
     text-align: center;
@@ -29,6 +34,3 @@
 .aside-left:hover p{
     color: brown;
 }
-
-
-

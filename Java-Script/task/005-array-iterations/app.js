@@ -31,3 +31,5 @@ else{
 }
 
 document.getElementById("test").innerHTML = result;
+
+console.log
