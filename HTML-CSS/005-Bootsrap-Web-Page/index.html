@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>005 Bootstrap Web Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg bg-dark fixed-top">
+      <div class="nav-container container">
+        <div class="nav-head container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img src="./img/ilpar-logo.png" alt=""
+          /></a>
+          <a class="navbar-brand" href="#">İlpar Oto</a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+        <div
+          class="navbar-link collapse navbar-collapse"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item no">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Products
+              </a>
+              <ul class="dropdown-menu bg-dark">
+                <li><a class="dropdown-item" href="#">Mechanic</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li></li>
+                <li><a class="dropdown-item" href="#">Electric </a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Motor</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Bodywork</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+                     <!-- IMAGE CAROUSEL -->
+
+    <div id="carouselExampleCaptions" class="mt-5 carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="4"
+          aria-label="Slide 5"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="5"
+          aria-label="Slide 6"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="6"
+          aria-label="Slide 7"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="7"
+          aria-label="Slide 8"
+        ></button>
+      </div>
+
+     <!-- ********************************-->
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/slide-img003.png" class="img-slide d-block w-100 h-75" alt="İlpar" />
+          <div class="carousel-caption d-none d-md-block w-25">
+            <button><a class="discover" href="https://www.renault.com.tr/hybrid-araclar/yeni-renault-duster-on-lansman.html">Keşfedin</a></button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/slide-img004.png" class="img-slide d-block w-100 h-75" alt="İlpar" />
+          <div class="carousel-caption d-none d-md-block w-25">
+            <button><a class="discover" href="https://www.renault.com.tr/hybrid-araclar/yeni-renault-austral.html">Keşfedin</a></button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/slide-img005.png" class="img-slide d-block w-100 h-75" alt="İlpar" />
+          <div class="carousel-caption d-none d-md-block w-25">
+            <button><a class="discover" href="https://www.renault.com.tr/elektrikli-araclar/renault5-htb-ph1.html">Keşfedin</a></button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/slide-img006.png" class="img-slide d-block w-100 h-75" alt="İlpar" />
+          <div class="carousel-caption d-none d-md-block w-25">
+            <button><a class="discover" href="https://www.renault.com.tr/elektrikli-araclar/megane-e-tech-elektrikli.html">Keşfedin</a></button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/slide-img007.png" class="img-slide d-block w-100 h-75" alt="İlpar" />
+          <div class="carousel-caption d-none d-md-block w-25">
+            <button><a class="discover" href="https://www.renault.com.tr/hybrid-araclar/yeni-clio-e-tech.html">Keşfedin</a></button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/slide-img008.png" class="img-slide d-block w-100 h-75" alt="İlpar" />
+          <div class="carousel-caption d-none d-md-block w-25">
+            <button><a class="discover" href="https://www.renault.com.tr/binek-araclar/yeni-megane-sedan.html">Keşfedin</a></button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/slide-img009.png" class="img-slide d-block w-100 h-75" alt="İlpar" />
+          <div class="carousel-caption d-none d-md-block w-25">
+            <button><a class="discover" href="https://www.renault.com.tr/hybrid-araclar/yeni-renault-rafale-lansman.html">Keşfedin</a></button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/slide-img010.png" class="img-slide d-block w-100 h-75" alt="İlpar" />
+          <div class="carousel-caption d-none d-md-block w-25">
+            <button><a class="discover" href="https://www.renault.com.tr/konsept-araclar-urun-gami/renault-niagara-konsept.html">Keşfedin</a></button>
+          </div>
+        </div>
+
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

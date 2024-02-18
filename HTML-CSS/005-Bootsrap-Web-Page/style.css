@@ -1,0 +1,68 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+/*! NAVBAR  */
+.nav-container  a{
+    color: rgb(235, 243, 250) !important;
+    white-space: nowrap;
+}
+.nav-head  a:hover{
+    color: rgb(197, 126, 126) !important;
+}
+
+.navbar-link a{
+    color: rgb(207, 204, 201) !important;
+}
+.navbar-link a:hover{
+    color: rgb(255, 255, 255) !important;
+}
+
+.nav-container img{
+    width: 75px;
+}
+
+.navbar{
+    background-color: rgb(34, 34, 34) !important;
+}
+
+                        /*! IMAGE CAROUSEL */
+
+.carousel-indicators button{
+    width: 100px !important;
+    height: 3px !important;
+    color: aliceblue;
+    margin-bottom: 3rem;
+}
+    
+.carousel-caption{
+    margin-bottom: 17rem;
+    width: 15% !important;
+
+}
+.carousel-caption button{
+    font-size: 1.2rem;
+    width: 35% !important;
+    height: 5vh;
+    border-radius: 5px;
+    background-color: aliceblue;
+    text-decoration: none !important;
+    border: none;
+}
+.carousel-caption button:hover{
+    background-color: rgb(246, 246, 69);
+
+}
+
+.carousel-caption button a{
+    text-decoration: none;
+    color: rgb(53, 39, 39);
+}
+
+.img-slide{
+    width: 100%;
+    height: 650px !important;
+}
