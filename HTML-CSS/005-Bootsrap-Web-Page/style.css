@@ -1,7 +1,7 @@
 *{
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
+    /* margin: 0% !important; */
+    /* padding: 0% !important; */
+    /* box-sizing: border-box !important; */
 }
 
 
@@ -27,6 +27,7 @@
 
 .navbar{
     background-color: rgb(34, 34, 34) !important;
+    height: 100px;
 }
 
                         /*! IMAGE CAROUSEL */
@@ -35,18 +36,19 @@
     width: 100px !important;
     height: 3px !important;
     color: aliceblue;
-    margin-bottom: 3rem;
+    margin-bottom: 20px;
 }
     
 .carousel-caption{
-    margin-bottom: 17rem;
+    margin-bottom: 170px !important;
+    /* padding-right: 350px !important; */
     width: 15% !important;
 
 }
-.carousel-caption button{
-    font-size: 1.2rem;
-    width: 35% !important;
-    height: 5vh;
+.carousel-caption button {
+    font-size: 1.3rem;
+    width: 100px !important;
+    height: 40px;
     border-radius: 5px;
     background-color: aliceblue;
     text-decoration: none !important;
@@ -63,6 +65,28 @@
 }
 
 .img-slide{
+    margin-top: 50px ;
     width: 100%;
-    height: 650px !important;
+    height: 450px !important;
+}
+
+            /*!  SERVICE  */
+
+.service{
+    height: 75px;
+    width: 13rem;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.295);
+}
+
+.service:hover{
+    border: 3px solid yellow;
+}
+
+.service a{
+    white-space: nowrap;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.664);
+    font-size: 1.1rem;
+
 }
