@@ -7,14 +7,21 @@
     <title>Document</title>
 </head>
 <body>
-    <div>
-       <h2>GUESS     <span id="random">dd</span> GAME</h2> 
+<div class="container">
+    <div class="h3"><h3>Try to find Number (Between 0 to 100)</h3></div>
+    
+    <div class="input">
+        <input type="text" id="userinput" placeholder="Enter your guess">
+        <button id="btn">TRY</button>
+    </div>
+    <div class="prg">
+        <p id="guessingnumber">Your number: <span id="yournumber"></span></p>
+        <p id="guessnote"></p>
+        <!-- <p id="remaingright">Remaining health: <span id="right"></span></p> -->
     </div>
 
-
     
-
-    <p id="demo"></p>
+</div>
 
     <script src="guess.js"></script>
 </body>
