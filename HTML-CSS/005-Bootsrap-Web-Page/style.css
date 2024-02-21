@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Protest+Strike&display=swap');
+
 *{
     /* margin: 0% !important; */
     /* padding: 0% !important; */
@@ -28,6 +30,10 @@
 .navbar{
     background-color: rgb(34, 34, 34) !important;
     height: 100px;
+}
+
+.dropdown-divider{
+    background-color: aliceblue;
 }
 
                         /*! IMAGE CAROUSEL */
@@ -73,6 +79,7 @@
             /*!  SERVICE  */
 
 .service{
+    margin-top: 5rem;
     height: 75px;
     width: 13rem;
     cursor: pointer;
@@ -88,5 +95,100 @@
     text-decoration: none;
     color: rgba(0, 0, 0, 0.664);
     font-size: 1.1rem;
+}
+
+.service-info{
+    text-align: center;
+    margin-top: 5rem;
+}
+.info-service{
+
+    font-size: 3rem;
+    font-family: "Anta", sans-serif;
+}
+      
+
+            /*!   NAV-TABS  */
+
+.nav-tab{
+    margin-top: 3rem;
+    height: 500px;
+}
+
+.nav-tab-img{
+   
+}
+
+.card-body p:first-child{
+    font-size: 0.8rem;
+    color: gray;
+    margin-bottom: 0%;
+}
+.card-body p:nth-child(2){
+    font-size: 0.8rem;
+    color: rgb(5, 122, 255);
+    border: 1px solid rgb(5, 122, 255) ;
+    width: 100px;
+    text-align: center;
+    margin-top: 0% !important;
+}
+
+.price{
+    font-family: "Anta", sans-serif;
+}
+
+.yeni-arac-al{
+    margin-bottom: 1rem !important;
+}
+.yeni-arac-al a{
+    background-color: black;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 0.3rem 1.5rem;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+.yeni-arac-al a:hover{
+    background-color: yellow;
+    color: black;
+}
+
+.card-btn-kesfet a{
+    border: 1px solid black;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 0.3rem 2.3rem;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: all 0.3s;
+}
+.card-btn-kesfet a:hover{
+    transform: inherit;
+    border: 1px solid yellow;
+}
+
+
+.clio-info{
+    padding: 1rem;
+    border: 2px solid white;
+}
+
+.clio-info:hover{
+    border: 2px solid yellow;
 
 }
+.card{
+    padding: 1rem;
+    border: 2px solid white;
+}
+
+.card:hover{
+    border: 2px solid yellow;
+
+}
+
+
+
