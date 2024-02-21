@@ -73,7 +73,7 @@
 .img-slide{
     margin-top: 50px ;
     width: 100%;
-    height: 450px !important;
+    height: 550px !important;
 }
 
             /*!  SERVICE  */
@@ -190,5 +190,37 @@
 
 }
 
+      /*! TÜM ARAÇLAR */
 
+.tum-araclar a{
+    margin: auto;
+        background-color: black;
+        color: aliceblue;
+        text-decoration: none;
+        padding: 0.4rem 1.5rem;
+        padding-bottom: 10px;
+        border-radius: 5px;
+        transition: all 0.3s;
+}
+.tum-araclar a:hover{
+        background-color: yellow;
+        color: black;
+}
 
+.img-tum-araclar img{
+    width: 95%;
+    height: 95%;
+    transition: all 1s;
+}
+.img-tum-araclar img:hover{
+    transform: scale(1.05);
+}
+
+.tum-arac{
+    height: 250px;
+    width: 100% !important;
+}
+
+.tum-ralar-note{
+    color: white;  
+}
