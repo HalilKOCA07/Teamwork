@@ -4,7 +4,7 @@
 
 const h3 = document.querySelector("h3")
 const addButton = document.getElementById("btn")
-const guessNumber = document.querySelector("ul")
+const guessNumber = document.querySelector("#guessingnumber")
 const guessNote = document.querySelector("#guessnote")
 const health = document.querySelector("#remaingright")
 const body = document.querySelector("body")
@@ -25,26 +25,34 @@ if (!userInput.value.trim()){
     userInput.value = ""
     return
 }
-if (isNaN(userInput.value)){
+else if (isNaN(userInput.value)){
     guessNote.textContent = `Lutfen geçerli bir icerik giriniz`
     userInput.value = ""
     return
 }
   
-if (userInput.value === pcSayi){
+else if (userInput.value === pcSayi){
     guessNote.textContent = `Congratulations! You are right...`
+    userInput.value = ""
+    return
 }
 
-if (userInput.value < 0 || userInput.value > 100) {
+else if (userInput.value < 0 || userInput.value > 100) {
    guessNote.textContent = `You must guess between 1 and 100...`
+   userInput.value = ""
+   return
 }
   
 else if (userInput.value < pcSayi) {
    guessNote.textContent = `You must guess a bigger number...`
+   userInput.value = ""
+   return
 }
   
 else if (userInput.value > pcSayi) {
    guessNote.textContent = `You must guess a lower number...`
+   userInput.value = ""
+   return
 }
   
 const spanEnterNumber = document.createElement("span")
@@ -54,3 +62,11 @@ const spanEnterNumber = document.createElement("span")
     userInput.value = ""
   
 }
+
+userInput.onkeydown = function (e) {
+    //   console.log(e.code)
+    if (e.code === "B") {
+      addButton.click()
+    }
+  }
+  
