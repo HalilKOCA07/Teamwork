@@ -1,184 +1,56 @@
-//?**************  GUESS GAME  **************/
+//* ==============================================
+//*                  EVENTS
+//* ===============================================
 
-// while (userSayi < 0 || userSayi > 100) {
-//         console.log("You must guess beteen 1 and 100");
-//         userSayi = prompt("Guess number that computer choose")
-
-// }
-// while(pcSayi > userSayi) {
-//     console.log("daha büyük");
-//     userSayi = prompt("Guess number that computer choose")
-// }
-// while(pcSayi < userSayi){
-//     console.log("daha küçük");
-//     userSayi = prompt("Guess number that computer choose")
-// }
-
-// console.log("kkkkk");
-
-// while(userSayi > pcSayi){
-//     console.log("You must guess lower number");
-//     userSayi = prompt("Guess number that computer choose")
-// }
-
-// while(userSayi < pcSayi){
-//     console.log("You must guess bigger number");
-//     userSayi = prompt("Guess number that computer choose")
-// }
-
-
-
-// let pcSayi = Math.floor(Math.random() * 101);
-//   document.getElementById("random").innerHTML = pcSayi;
-
-// console.log(pcSayi);
-
-// let userSayi = prompt("Guess number that computer choose");
-// let i = 5;
-// let cikis = false
-
-// while (i > 0){
-//   if (userSayi < 0 || userSayi > 100) {
-//     alert(`You must guess beteen 1 and 100. Remaining healt: ${i}`);
-//     userSayi = prompt("Guess number that computer choose ");
-//   } 
-//   else if (userSayi < pcSayi) {
-//     alert(`You must guess bigger number. Remaining healt: ${i}`);
-//     userSayi = prompt("Guess number that computer choose");
-//   } 
-//   else if (userSayi > pcSayi) {
-//     alert(`You must guess lower number. Remaining healt: ${i}`);
-//     userSayi = prompt("Guess number that computer choose");
-//   }
-//   else if (userSayi === pcSayi){
-//   alert("Cangratulate! You are right...");
-//     cikis = true
-//     if (cikis === true){
-//       break
-//     }
-// }
-//   else{
-//     alert("Game Over");
-//   }
-// i--;
-// }
-
-
-
-// let pcSayi = Math.floor(Math.random() * 101);
-// document.getElementById("random").innerHTML = pcSayi;
-
-// console.log(pcSayi);
-
-// let userSayi = +prompt("Guess the number that the computer chose");
-// let i = 5;
-// let cikis = false;
-
-// while (i > 0) {
-//   if(userSayi === pcSayi){
-//     alert("Congratulations! You are right...");
-//     cikis = true
-//     if (cikis === true) {
-//       break;
-//     }}
-//   else if (userSayi < 0 || userSayi > 100) {
-//     alert(`You must guess between 1 and 100. Remaining health: ${i}`);
-//     userSayi = prompt("Guess the number that the computer chose");
-//   } else if (userSayi < pcSayi) {
-//     alert(`You must guess a bigger number. Remaining health: ${i}`);
-//     userSayi = prompt("Guess the number that the computer chose");
-//   } else if (userSayi > pcSayi) {
-//     alert(`You must guess a lower number. Remaining health: ${i}`);
-//     userSayi = prompt("Guess the number that the computer chose");
-//   } 
-//   else{
-//     {alert("Game Over");}
-//   }
-
-//   i--;
-// }
-
-let btn = document.getElementById('btn');
-let output = document.getElementById('guessnote')
-
-
-
+const h3 = document.querySelector("h3")
+const addButton = document.getElementById("btn")
+const guessNumber = document.querySelector("ul")
+const guessNote = document.querySelector("#guessnote")
+const health = document.querySelector("#remaingright")
+const body = document.querySelector("body")
+const userInput = document.getElementById("userinput")
 let pcSayi = [Math.floor(Math.random() * 101)];
-
-console.log(pcSayi);
-let i = 3
-
-if (i > 0){
-
-btn.addEventListener('click', function(){
-
-let userSayi = document.getElementById("userinput").value;
-let yourNumber = document.getElementById("yournumber");
-
-// let cikis = false;
-
-yourNumber.innerHTML = `${userSayi}`
-  if (userSayi == pcSayi) {
-    output.innerHTML = "Congratulations! You are right...";
-  } 
-  if (userSayi < 0 || userSayi > 100) {
-    output.innerHTML = "You must guess between 1 and 100";
-
-    // userSayi = prompt("Guess the number that the computer chose");
-  } 
-  if (userSayi < pcSayi) {
-   output.innerHTML = "You must guess a bigger number.";
-
-    // userSayi = prompt("Guess the number that the computer chose");
-  } else if (userSayi > pcSayi){
-    output.innerHTML = "You must guess a lower number.";
-
-    // userSayi = prompt("Guess the number that the computer chose");
-  }
-  i -= 1
-});
-
+console.log(pcSayi)
+body.onload = function () {
+    userInput.focus()
 }
 
-else if(i < 0){
-  output.innerHTML = "game over"
+addButton.onclick = (e) => {
+
+    userInput.focus()
+    guessNote.textContent = `Congratulations! You are right... ${pcSayi} `
+
+if (!userInput.value.trim()){
+    guessNote.textContent = `Lutfen  bir sayı giriniz`
+    userInput.value = ""
+    return
+}
+if (isNaN(userInput.value)){
+    guessNote.textContent = `Lutfen geçerli bir icerik giriniz`
+    userInput.value = ""
+    return
+}
+  
+if (userInput.value === pcSayi){
+    guessNote.textContent = `Congratulations! You are right...`
 }
 
-
-
-// const kosul = i < 0 && pcSayi !== userSayi
-
-// if (kosul){
-//     output.innerHTML = "I am sorry! You can't find"
-// }
-
-// });
-
-
-
-
-
-// // program where the user has to guess a number generated by a program
-
-// function guessNumber() {
-
-//   // generating a random integer from 1 to 10
-//   const random = Math.floor(Math.random() * 10) + 1;
-
-//   // take input from the user
-//   let number = parseInt(prompt('Guess a number from 1 to 10: '));
-
-//   // take the input until the guess is correct
-//   while(number !== random) {
-//       number = parseInt(prompt('Guess a number from 1 to 10: '));
-//   }
-
-//   // check if the guess is correct
-//   if(number == random) {
-//       console.log('You guessed the correct number.');
-//   }
-
-// }
-
-// // call the function
-// guessNumber();
+if (userInput.value < 0 || userInput.value > 100) {
+   guessNote.textContent = `You must guess between 1 and 100...`
+}
+  
+else if (userInput.value < pcSayi) {
+   guessNote.textContent = `You must guess a bigger number...`
+}
+  
+else if (userInput.value > pcSayi) {
+   guessNote.textContent = `You must guess a lower number...`
+}
+  
+const spanEnterNumber = document.createElement("span")
+    spanEnterNumber.textContent = `${userInput.value}   `
+    guessNumber.appendChild(spanEnterNumber)
+    console.log(spanEnterNumber)
+    userInput.value = ""
+  
+}
