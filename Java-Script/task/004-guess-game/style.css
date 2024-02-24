@@ -60,7 +60,7 @@
     /* border: 3px solid rgb(240, 232, 232); */
     text-align: center;
     width: 500px;
-    color: beige;
+    /* color: beige; */
     height: 50px;
     font-size: 1.5rem;
     border-radius: 10px;
@@ -91,7 +91,16 @@
         /*! CONGRATS STYLE */
 
 .congrats{
-  color: red;
+  color: rgb(255, 179, 80) ;
   font-size: 2rem;
 }
 
+.guess-note{
+  color: rgb(250, 65, 65) ;
+  font-size: 2rem;
+}
+
+.guess-note-bir-sayi-gir{
+  color: rgb(70, 31, 247) ;
+  font-size: 2rem;
+}

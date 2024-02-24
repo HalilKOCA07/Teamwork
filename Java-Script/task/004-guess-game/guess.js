@@ -21,7 +21,7 @@ const yourNumber = document.getElementById("yournumber"); // === Girilen Sayıla
 //?*!                  STYLE
 //* --------------------------------------------
 
-yourNumber.className = "text-red";
+yourNumber.className = "guess-note";
 addButton.className = "button";
 h3.className = "head";
 delButton.className = "d-none";
@@ -36,7 +36,6 @@ body.onload = function () {
 };
 
 addButton.onclick = (e) => {
-  //! ADD BUTTON
 
   userInput.focus();
   const spanEnterNumber = document.createElement("span");
@@ -48,23 +47,27 @@ addButton.onclick = (e) => {
 
   if (!userInput.value.trim()) {
     guessNote.textContent = `Lutfen  bir sayı giriniz`;
+    guessNote.classList.add("fa-house-chimney", "fa-beat-fade", "guess-note-bir-sayi-gir");
     userInput.value = "";
     return;
   } else if (isNaN(userInput.value)) {
     guessNote.textContent = `Lutfen geçerli bir icerik giriniz`;
+    guessNote.classList.add("fa-house-chimney", "fa-beat-fade", "guess-note");
     userInput.value = "";
     return;
   } else if (userInput.value < 0 || userInput.value > 100) {
     guessNote.textContent = `You must guess between 1 and 100...`;
+    guessNote.classList.add("fa-house-chimney", "fa-beat-fade", "guess-note");
     userInput.value = "";
     return;
   } else if (userInput.value < pcSayi) {
     guessNote.textContent = `You must guess a bigger number...`;
+    guessNote.classList.add("fa-house-chimney", "fa-beat-fade", "congrats");
     userInput.value = "";
     return;
   } else if (userInput.value > pcSayi) {
     guessNote.textContent = `You must guess a lower number...`;
-    guessNote.classList.add("fa-house-chimney", "fa-beat-fade", "text-red");
+    guessNote.classList.add("fa-house-chimney", "fa-beat-fade", "congrats");
     userInput.value = "";
     return;
   } else if (userInput.value == pcSayi) {
@@ -83,6 +86,12 @@ addButton.onclick = (e) => {
     congrats.appendChild(textCongrats); //? 3- Olusturulan text dugumunu yeni elemente bagla (append)
     h3.after(congrats);
     congrats.classList.add("congrats", "fa-solid", "fa-shake");
+//!-------===================================================-------------
+    const tryAgain = document.createElement("p"); //? 1- yeni bir li elementi olustur
+    const textTry = document.createTextNode("If you want to play again,   press F5"); //? 2- Eger    text tabanlı bir element ise text dugumunu olustur
+    tryAgain.appendChild(textTry); //? 3- Olusturulan text dugumunu yeni elemente bagla (append)
+    congrats.after(tryAgain);
+    tryAgain.classList.add("guess-note", "mt-5");
 
     //! DOĞRU SAYI BİLİNDİĞİ ZAMAN EKLENECEK BUTON
 
