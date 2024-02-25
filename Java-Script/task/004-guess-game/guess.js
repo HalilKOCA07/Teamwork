@@ -38,9 +38,19 @@ body.onload = function () {
 addButton.onclick = (e) => {
 
   userInput.focus();
+
+  if (!isNaN(userInput.value)){
+
   const spanEnterNumber = document.createElement("span");
   spanEnterNumber.textContent = `${userInput.value}   `;
   yourNumber.appendChild(spanEnterNumber);
+  }
+  else{
+    const spanEnterNumber = document.createElement("span");
+    spanEnterNumber.textContent = ``;
+    yourNumber.appendChild(spanEnterNumber);
+  }
+
   delButton.className = "d-block";
 
 
@@ -48,12 +58,16 @@ addButton.onclick = (e) => {
   if (!userInput.value.trim()) {
     guessNote.textContent = `Lutfen  bir sayı giriniz`;
     guessNote.classList.add("fa-house-chimney", "fa-beat-fade", "guess-note-bir-sayi-gir");
+    const spanEnterNumber = document.createElement("span");
+    spanEnterNumber.textContent = ` `;
+    yourNumber.appendChild(spanEnterNumber);
     userInput.value = "";
     return;
   } else if (isNaN(userInput.value)) {
     guessNote.textContent = `Lutfen geçerli bir icerik giriniz`;
     guessNote.classList.add("fa-house-chimney", "fa-beat-fade", "guess-note");
     userInput.value = "";
+
     return;
   } else if (userInput.value < 0 || userInput.value > 100) {
     guessNote.textContent = `You must guess between 1 and 100...`;
