@@ -1,265 +1,280 @@
-@import url('https://fonts.googleapis.com/css2?family=Anta&family=Protest+Strike&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Anta&family=Protest+Strike&display=swap");
 
 /*! NAVBAR  */
-.nav-container  a{
-    color: rgb(235, 243, 250) !important;
-    white-space: nowrap;
+.nav-container a {
+  color: rgb(235, 243, 250) !important;
+  white-space: nowrap;
 }
-.nav-head  a:hover{
-    color: rgb(197, 126, 126) !important;
-}
-
-.navbar-link a{
-    color: rgb(207, 204, 201) !important;
-}
-.navbar-link a:hover{
-    color: rgb(255, 255, 255) !important;
+.nav-head a:hover {
+  color: rgb(197, 126, 126) !important;
 }
 
-.nav-container img{
-    width: 75px;
+.navbar-link a {
+  color: rgb(207, 204, 201) !important;
+}
+.navbar-link a:hover {
+  color: rgb(255, 255, 255) !important;
 }
 
-.navbar{
-    background-color: rgb(34, 34, 34) !important;
-    height: 100px;
+.nav-container img {
+  width: 75px;
 }
 
-.dropdown-divider{
-    background-color: aliceblue;
+.navbar {
+  background-color: rgb(34, 34, 34) !important;
+  height: 100px;
 }
 
-                        /*! IMAGE CAROUSEL */
-
-.carousel-indicators button{
-    width: 100px !important;
-    height: 3px !important;
-    color: aliceblue;
-    margin-bottom: 20px;
+.dropdown-divider {
+  background-color: aliceblue;
 }
-    
-.carousel-caption{
-    margin-bottom: 170px !important;
-    width: 15% !important;
 
+/*! IMAGE CAROUSEL */
+
+.carousel-indicators button {
+  width: 100px !important;
+  height: 3px !important;
+  color: aliceblue;
+  margin-bottom: 20px;
+}
+
+.carousel-caption {
+  margin-bottom: 170px !important;
+  width: 15% !important;
 }
 .carousel-caption button {
-    font-size: 1.3rem;
-    width: 100px !important;
-    height: 40px;
-    border-radius: 5px;
-    background-color: aliceblue;
-    text-decoration: none !important;
-    border: none;
+  font-size: 1.3rem;
+  width: 100px !important;
+  height: 40px;
+  border-radius: 5px;
+  background-color: aliceblue;
+  text-decoration: none !important;
+  border: none;
 }
-.carousel-caption button:hover{
-    background-color: rgb(246, 246, 69);
-
+.carousel-caption button:hover {
+  background-color: rgb(246, 246, 69);
 }
 
-.carousel-caption button a{
+.carousel-caption button a {
+  text-decoration: none;
+  color: rgb(53, 39, 39);
+}
+
+.img-slide {
+  margin-top: 50px;
+  width: 100%;
+  height: 550px !important;
+}
+
+/*!  SERVICE  */
+
+.service {
+  margin-top: 5rem;
+  height: 75px;
+  width: 13rem;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.295);
+}
+
+.service:hover {
+  border: 3px solid yellow;
+}
+
+.service a {
+  white-space: nowrap;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.664);
+  font-size: 1.1rem;
+}
+
+.service-info {
+  text-align: center;
+  margin-top: 5rem;
+}
+.info-service {
+  font-size: 3rem;
+  font-family: "Anta", sans-serif;
+}
+
+/*!   NAV-TABS  */
+
+.nav-tab {
+  margin-top: 3rem;
+  height: 500px;
+}
+
+.card-body p:first-child {
+  font-size: 0.8rem;
+  color: gray;
+  margin-bottom: 0%;
+}
+.card-body p:nth-child(2) {
+  font-size: 0.8rem;
+  color: rgb(5, 122, 255);
+  border: 1px solid rgb(5, 122, 255);
+  width: 100px;
+  text-align: center;
+  margin-top: 0% !important;
+}
+
+.price {
+  font-family: "Anta", sans-serif;
+}
+
+.yeni-arac-al {
+  margin-bottom: 1rem !important;
+}
+.yeni-arac-al a {
+  background-color: black;
+  color: aliceblue;
+  text-decoration: none;
+  padding: 0.3rem 1.5rem;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+.yeni-arac-al a:hover {
+  background-color: yellow;
+  color: black;
+}
+
+.card-btn-kesfet a {
+  border: 1px solid black;
+  background-color: white;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 0.3rem 2.3rem;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  transition: all 0.3s;
+}
+.card-btn-kesfet a:hover {
+  transform: inherit;
+  border: 1px solid yellow;
+}
+
+.clio-info {
+  padding: 1rem;
+  border: 2px solid white;
+}
+
+.clio-info:hover {
+  border: 2px solid yellow;
+}
+.card {
+  padding: 1rem;
+  border: 2px solid white;
+}
+
+.card:hover {
+  border: 2px solid yellow;
+}
+
+/*! TÜM ARAÇLAR */
+
+.tum-araclar a {
+  margin: auto;
+  background-color: black;
+  height: 45px;
+  color: aliceblue;
+  text-decoration: none;
+  padding: 0.6rem 1.5rem;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+.tum-araclar a:hover {
+  background-color: yellow;
+  color: black;
+}
+
+.img-tum-araclar img {
+  width: 95%;
+  height: 200px;
+  transition: all 1s;
+  box-shadow: 2px 2px 10px;
+  border-radius: 10px;
+}
+.img-tum-araclar img:hover {
+  transform: scale(1.05);
+}
+
+.tum-arac {
+  height: 250px;
+  width: 100% !important;
+}
+.tum-araclar {
+  margin-top: 5rem !important;
+}
+
+.tum-ralar-note a {
+  color: white;
+  text-decoration: none;
+}
+
+/*! KAMPANYALAR */
+
+.kampanyalar {
+  margin-top: auto !important;
+  color: rgb(255, 196, 0) !important;
+  font-size: 4em;
+}
+
+.firsat {
+  color: rgb(255, 102, 0) !important;
+}
+
+.hızlı-kredi-prg {
+  text-decoration: none;
+  color: rgb(255, 255, 255) !important;
+  font-size: large;
+  margin-top: 11rem !important;
+}
+.covid {
+  color: black !important;
+}
+
+/*! İNOVASYON */
+
+.inovasyon {
+  color: rgb(255, 196, 0) !important;
+  font-size: 3em;
+  margin-top: 0 !important;
+  margin-bottom: 2rem !important;
+}
+
+.inovasyon-yeni {
+  margin-top: 5rem;
+  color: rgb(255, 102, 0) !important;
+  margin-bottom: 0 !important;
+}
+
+.inovasyon-img {
+  height: 300px !important;
+}
+
+.inovasyon-info{
     text-decoration: none;
-    color: rgb(53, 39, 39);
-}
-
-.img-slide{
-    margin-top: 50px ;
-    width: 100%;
-    height: 550px !important;
-}
-
-            /*!  SERVICE  */
-
-.service{
-    margin-top: 5rem;
-    height: 75px;
-    width: 13rem;
-    cursor: pointer;
-    border: 1px solid rgba(0, 0, 0, 0.295);
-}
-
-.service:hover{
-    border: 3px solid yellow;
-}
-
-.service a{
-    white-space: nowrap;
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.664);
-    font-size: 1.1rem;
-}
-
-.service-info{
-    text-align: center;
-    margin-top: 5rem;
-}
-.info-service{
-
-    font-size: 3rem;
-    font-family: "Anta", sans-serif;
-}
-      
-
-            /*!   NAV-TABS  */
-
-.nav-tab{
-    margin-top: 3rem;
-    height: 500px;
-}
-
-.card-body p:first-child{
-    font-size: 0.8rem;
-    color: gray;
-    margin-bottom: 0%;
-}
-.card-body p:nth-child(2){
-    font-size: 0.8rem;
-    color: rgb(5, 122, 255);
-    border: 1px solid rgb(5, 122, 255) ;
-    width: 100px;
-    text-align: center;
-    margin-top: 0% !important;
-}
-
-.price{
-    font-family: "Anta", sans-serif;
-}
-
-.yeni-arac-al{
-    margin-bottom: 1rem !important;
-}
-.yeni-arac-al a{
-    background-color: black;
-    color: aliceblue;
-    text-decoration: none;
-    padding: 0.3rem 1.5rem;
-    padding-bottom: 10px;
-    border-radius: 5px;
-    transition: all 0.3s;
-}
-.yeni-arac-al a:hover{
-    background-color: yellow;
     color: black;
-}
+    font-size: 1.5rem;
+    font-family: "Anta", sans-serif;
 
-.card-btn-kesfet a{
-    border: 1px solid black;
-    background-color: white;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    padding: 0.3rem 2.3rem;
-    padding-bottom: 10px;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    transition: all 0.3s;
-}
-.card-btn-kesfet a:hover{
-    transform: inherit;
-    border: 1px solid yellow;
-}
-
-
-.clio-info{
-    padding: 1rem;
-    border: 2px solid white;
-}
-
-.clio-info:hover{
-    border: 2px solid yellow;
-
-}
-.card{
-    padding: 1rem;
-    border: 2px solid white;
-}
-
-.card:hover{
-    border: 2px solid yellow;
 
 }
 
-      /*! TÜM ARAÇLAR */
+/*! HABERLER */
 
-.tum-araclar a{
-        margin: auto;
-        background-color: black;
-        height: 45px;
-        color: aliceblue;
-        text-decoration: none;
-        padding: 0.6rem 1.5rem;
-        border-radius: 5px;
-        transition: all 0.3s;
-}
-.tum-araclar a:hover{
-        background-color: yellow;
-        color: black;
+.haberler {
+  margin-bottom: 0;
+  margin-top: 15rem !important;
 }
 
-.img-tum-araclar img{
-    width: 95%;
-    height: 200px;
-    transition: all 1s;
-    box-shadow: 2px 2px 10px;
-    border-radius: 10px;
-}
-.img-tum-araclar img:hover{
-    transform: scale(1.05);
+.lansman{
+    font-size: 1rem;
 }
 
-.tum-arac{
-    height: 250px;
-    width: 100% !important;
+.sari-btn{
+    width: 100px;
+    background-color: rgb(221, 221, 47);
+    border: 2px solid rgb(221, 221, 47);
 }
-.tum-araclar{
-    margin-top: 5em !important; 
-}
-
-.tum-ralar-note a{
-    color: white;
-    text-decoration: none;
-}
-
-      /*! KAMPANYALAR */
-
-.kampanyalar{
-    margin-top: 50px !important;
-    color: rgb(255, 196, 0) !important;
-    font-size: 4em;
-}
-
-.firsat{
-    color: rgb(255, 102, 0) !important;
-}
-
-.hızlı-kredi-prg{
-    text-decoration: none;
-    color:rgb(51, 42, 10) !important;
-    font-size: large;
-}
-
-      /*! İNOVASYON */
-
-      .inovasyon{
-        color: rgb(255, 196, 0) !important;
-        font-size: 3em;
-        margin-top: 0 !important;
-        margin-bottom: 2rem !important;
-    }
-    
-    .inovasyon-yeni{
-        margin-top: 5rem;
-        color: rgb(255, 102, 0) !important;
-        margin-bottom: 0 !important;
-    }
-
-    .inovasyon-img{
-        height: 300px !important;
-    }
-
-      /*! İNOVASYON */
-
-.haberler{
-    margin-bottom: 0;
-    margin-top: 10rem !important;
-}
-
