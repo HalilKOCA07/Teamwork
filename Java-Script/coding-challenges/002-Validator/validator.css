@@ -1,0 +1,54 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.ssn{
+    justify-content: center;
+    width: 75%;
+    align-items: center;
+    background-color: rgb(235, 177, 108);
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px;
+    height: 100px;
+}
+
+.ssn-errors{
+    font-size: 2rem;
+    color: red;
+}
+
+.card-no{
+    margin-top: 5rem;
+    justify-content: center;
+    width: 75%;
+    align-items: center;
+    background-color: bisque;
+}
+
+label{
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+input{
+    width: 250px !important;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+button.btn{
+    color: white;
+    font-weight: bold;
+    margin-left: 2rem;
+    background-color: rgb(95, 94, 94);
+    width: 100px !important;
+}
+button.btn:hover{
+    background-color: rgb(46, 44, 44);
+    color : white;
+}
