@@ -1,0 +1,12 @@
+//*****************************************************
+//*   HOME PAGE
+//*****************************************************
+
+
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
+.about-img-container{
+    @include mixins.bgImg(50vh, variables.$pathName1);
+}
+

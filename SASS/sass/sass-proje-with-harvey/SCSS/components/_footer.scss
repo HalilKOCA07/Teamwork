@@ -1,0 +1,21 @@
+//*****************************************************
+//*       FOOTER
+//*****************************************************
+
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+
+a{
+    padding: 0.4rem;
+    @include mixins.soft(0.5s);
+    &:hover{
+        color: variables.$secondary-color;
+    }
+}
+
+footer.horizontal{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: end;
+}
