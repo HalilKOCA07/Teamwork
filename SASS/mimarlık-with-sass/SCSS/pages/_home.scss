@@ -1,0 +1,63 @@
+//**********************************
+//*   HOME
+//**********************************
+
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
+//* FONT
+
+//kalın
+.protest-strike-regular {
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+//ince
+.anta-regular {
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+.home-bgImg-container{
+    @include mixins.bgImg(100vh, variables.$pathBg01);
+}
+
+main{
+    display: flex;
+    // border: 2px solid red;
+    width: 60rem;
+    height: 100vh;
+    .info-main{
+        font-family: "Protest Strike", sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // align-items: center;
+        margin-top: 5rem;
+        height: 70%;
+        width: 80%;
+        color: variables.$text-color;
+        padding: 2rem 6rem;
+        // border: 2px solid blue;
+        img{
+            margin-right: 1rem;
+            width: 170px;
+        }
+        h2{
+            font-size: 4rem;
+            margin-bottom: 3rem;
+            .span-head-main{
+                border-bottom: 5px solid variables.$secondary-color;
+            }
+        }
+        p{
+            font-size: 1.5rem;
+            text-align: end;
+            padding-right: 16rem;
+        }
+}
+}

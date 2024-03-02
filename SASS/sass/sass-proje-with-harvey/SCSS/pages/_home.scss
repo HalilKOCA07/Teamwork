@@ -6,7 +6,7 @@
 @use "../abstracts/mixins";
 
 .home-bgImg-container {
-  @include mixins.bgImg(100vh, variables.$pathName1);
+  @include mixins.bgImg(100%, variables.$pathName1);
 }
 
 .home {
@@ -14,7 +14,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   text-align: center;
   height: 80vh;
   &__name {

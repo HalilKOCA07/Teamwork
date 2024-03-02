@@ -1,0 +1,29 @@
+//*****************************************************
+//*   MAIN SCSS
+//*****************************************************
+
+//* ABSTTRACTS
+@use "./abstracts/variables";
+@use "./abstracts/mixins";
+
+//* RESET
+@use "./base/reset";
+
+//* COMPONENTS
+@use "./companents/nav";
+@use "./companents/footer";
+
+//* PAGES
+    //? home
+    @use "./pages/home";
+
+//* CDN
+
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Protest+Strike&display=swap');
+
+body{
+    position: relative;
+}
+

@@ -1,0 +1,55 @@
+//**********************************
+//*   RESET
+//**********************************
+
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
+nav{
+    // border: 2px solid red;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: variables.$primary-color;
+    color: variables.$text-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:70px;
+    position: fixed;
+    z-index: 3;
+
+    .head{
+        display: flex;
+        gap: 1rem;
+        img{
+            width: 70px;
+        }
+        cursor: default;
+        // @extend variables.anta-regular;
+    }
+
+    .nav__list{
+        .nav__item{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            list-style-type: none;
+            
+            a{
+                text-decoration: none;
+                color: variables.$text-color;
+                &:hover{
+                    color: variables.$secondary-color;
+                    @include mixins.soft(.5sn);
+                }
+                .nav__link--active {
+                    color: #ff652f;
+                }
+            }
+        }
+        
+    }
+
+}
+
+

@@ -1,0 +1,52 @@
+//**********************************
+//*   FOOTER
+//**********************************
+
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
+footer{
+    // border: 2px solid red;
+    height: 80%;
+    width: 70px;
+    z-index: 1;
+    position: fixed;
+    display: flex;
+    color: variables.$text-color;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: variables.$primary-color;
+    border-radius: 10px;
+    margin-top: 0rem;
+
+    .social-icons{
+        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+        padding: 5.5rem 1rem;
+            a{
+        color: variables.$text-color;
+        @include mixins.soft(0.5sn);
+        &:hover{
+            color: variables.$secondary-color;
+        }
+      }
+    }
+
+         
+        //  HOME FOOTER   
+
+    .copyright{
+        // position: fixed;
+        cursor: default;
+        writing-mode: vertical-lr;
+        text-align: center;
+        padding: 1rem 1.5rem;
+        bottom: 9rem;
+        font-size: 1rem;
+        span{
+            font-size: 1.5rem;
+        }
+    }
+
+}
