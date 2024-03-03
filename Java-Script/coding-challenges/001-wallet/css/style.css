@@ -9,7 +9,7 @@
   border: 2px solid red;
   width: 70%;
   margin: auto;
-  margin-top: 5rem;
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -71,6 +71,7 @@ form .info-user {
   font-size: 1.1rem;
   border-radius: 5px;
   border: none;
+  font-weight: bold;
 }
 
 .gelir .gelir-input {
@@ -83,20 +84,54 @@ form .info-user {
   border: 2px solid rgb(7, 175, 218);
 }
 .gelir .gelir-btn {
-  height: 26px;
-  width: 40px;
-  background-color: #00ffff;
+  height: 30px;
+  width: 50px;
+  background-color: #52aaaa;
   box-shadow: 2px 2px 3px #036e6e;
   border: none;
   border-radius: 5px;
   margin-left: 0.5rem;
+  color: white;
+  text-align: center;
+  font-weight: bold;
 }
 .gelir .gelir-btn:hover {
   box-shadow: none;
 }
 
 .table {
-  border: 2px solid red;
+  margin-top: 1rem;
+}
+.table button {
+  border: none;
+}
+
+.calculation {
+  width: 40%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin: 0 60%;
+}
+.calculation div {
+  height: 40px;
+  border: 0.1px solid green;
+  text-align: end;
+  font-weight: bolder;
+  padding-top: 0.5rem;
+  padding-right: 0.5rem;
+}
+.calculation .cal-gelir-text, .calculation .cal-gelir, .calculation .cal-kalan-text, .calculation .cal-kalan {
+  background-color: #c4e2e2;
+}
+
+.clear-btn {
+  width: 150px;
+  margin: 1rem auto;
+  background-color: #004444;
+  border: none;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
