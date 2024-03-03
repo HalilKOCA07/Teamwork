@@ -1,0 +1,130 @@
+//***********************
+//*  WALLET
+//***********************
+
+
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+
+.container{
+    border: 2px solid red;
+    width: 70%;
+    margin: auto;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.header{
+    // border: 2px solid blue;
+    h1{
+        color: variables.$secondary-color;
+        font-size: 3rem;
+        img{
+            width: 100px;
+        }
+    }
+}
+
+          //!  HARCMA FORMU
+
+form{
+    // border: 2px solid blue;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+    .date-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // border: 2px solid green;
+        // width: 100%;
+
+        input{
+            width: 70%;
+            margin-top: -1rem;
+            height: 30px;
+            border-radius: 7px;
+            padding: 1rem;
+            color: variables.$primery-color;
+            box-shadow: inset 1px 1px 1px rgb(4, 213, 250);
+            border: 2px solid rgb(7, 175, 218);
+        }
+
+    }
+    .miktar-box{
+        // border: 2px solid green;
+        width: 100%;
+        @extend .date-box;
+    }
+
+    .har-alan-box{
+        // grid-area: 1/2/4/3;
+        // border: 2px solid green;
+        @extend .date-box
+
+    }
+    .info-user{
+        // border: 2px solid green;
+        width: 100%;
+        height: 100%;
+    }
+}
+.har-formu .har-kydet-btn{
+    margin: auto;
+    width: 80px;
+    height: 30px;
+    background-color: rgb(240, 29, 29);
+    color: variables.$text-white;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    border: none;
+}
+
+
+             //! GELİR EKLE
+
+.gelir{
+    .gelir-input{
+        width: 55%;
+        height: 30px;
+        border-radius: 7px;
+        padding: 1rem;
+        color: variables.$primery-color;
+        box-shadow: inset 1px 1px 1px rgb(4, 213, 250);
+        border: 2px solid rgb(7, 175, 218);
+    }
+    .gelir-btn{
+        height: 26px;
+        width: 40px;
+        background-color: #00ffff;
+        box-shadow: 2px 2px 3px #036e6e;
+        border: none;
+        border-radius: 5px;
+        margin-left: .5rem;
+        &:hover{
+            box-shadow: none
+        }
+
+    }
+}
+
+            //! GELİR GİDER TABLOSU
+    
+table th{
+    // background-color: #89f8f8 !important;
+}
+.table{
+    border: 2px solid red;
+}
