@@ -17,39 +17,39 @@
 
         <!-- harcama formu -->
         <div class="har-formu">
-            <form action="./JS/wallet.js">
+            <form id="harcama-form">
                 <div class="date-box">
                     <label for="tarih">Tarih:</label><br>
                     <input id="tarih" class="date" type="date" placeholder="01.01.2024">
                 </div>
 
-                <div class="miktar-box">
-                    <label for="hacama-miktar">Harcama Miktar:</label><br>
-                    <input id="hacama-miktar" class="har-miktar" type="number" placeholder="1000 TL">
-                </div> 
+                <div class="har-miktar-box">
+                    <label for="harcama-miktar">Harcama Alanı:</label><br>
+                    <input id="harcama-miktar" class="har-miktar" type="number" placeholder="1000"/>
+                </div>
 
                 <div class="har-alan-box">
                     <label for="harcama-alani">Harcama Alanı:</label><br>
-                    <input id="harcama-alani" class="har-alani" type="text" placeholder="Kira, Faıura, Kredi Kartı, ...">
+                    <input id="harcama-alani" class="har-alani" type="text" placeholder="Kira, Faıura, Kredi Kartı, ..."/>
                 </div>
 
                 <div class="info-user"></div>
                 <button class="har-kydet-btn">Kaydet</button>
             </form>
         </div>
-        <div class="gelir">
-            <input class="gelir-input" type="number" placeholder="Gelirinizi giriniz. ...TL">
+        <form id="gelir-form" class="gelir">
+            <input class=" col-12 col-md-8 gelir-input" type="number" step="0.01" min="0" placeholder="Gelirinizi giriniz. ...TL" required autofocus>
             <button class="gelir-btn">Ekle</button>
-        </div>
+        </form>
         <div class="table">
-            <table class="table table-striped table-hover">
+            <table id="harcama-tablo" class="table table-striped table-hover">
 
                     <tr>
                         <th>Sıra</th>
                         <th>Tarih</th>
                         <th>Harcam Alanı</th>
                         <th>Harcama Miktarı</th>
-                        <th></th>
+                        <th>İşlem</th>
                     </tr>
 
                     <!-- <tr>

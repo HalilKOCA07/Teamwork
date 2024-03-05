@@ -15,7 +15,7 @@ const buttonSsn = document.querySelector(".ssn button")
 
 let infoSsn = document.querySelector(".ssn-errors")
 
-buttonSsn.addEventListener("click", (e) => {
+buttonSsn.addEventListener("click", (e) =>{
 
     if (inputSsn.value.trim() === ""){
         infoSsn.textContent = "ssn Required and must be 9 characters"
