@@ -226,6 +226,7 @@ main{
     width: 95%;
     height: 50vh;
     border-radius: 10px;
+    transition: all 1s;
 }
 
 @media screen and (max-width:1115px) {

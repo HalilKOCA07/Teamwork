@@ -1,0 +1,135 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css);
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.container {
+  border: 2px solid red;
+  width: 70%;
+  margin: auto;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.header h1 {
+  color: #ddbb24;
+  font-size: 3rem;
+}
+.header h1 img {
+  width: 100px;
+}
+
+form {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1rem;
+}
+form .date-box, form .har-alan-box, form .miktar-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+form .date-box input, form .har-alan-box input, form .miktar-box input {
+  width: 70%;
+  margin-top: -1rem;
+  height: 30px;
+  border-radius: 7px;
+  padding: 1rem;
+  color: #201f1f;
+  box-shadow: inset 1px 1px 1px rgb(4, 213, 250);
+  border: 2px solid rgb(7, 175, 218);
+}
+form .miktar-box {
+  width: 100%;
+}
+form .info-user {
+  width: 100%;
+  height: 100%;
+}
+
+.har-formu .har-kydet-btn {
+  margin: auto;
+  width: 80px;
+  height: 30px;
+  background-color: rgb(240, 29, 29);
+  color: white;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+}
+
+.gelir .gelir-input {
+  width: 55%;
+  height: 30px;
+  border-radius: 7px;
+  padding: 1rem;
+  color: #201f1f;
+  box-shadow: inset 1px 1px 1px rgb(4, 213, 250);
+  border: 2px solid rgb(7, 175, 218);
+}
+.gelir .gelir-btn {
+  height: 30px;
+  width: 50px;
+  background-color: #52aaaa;
+  box-shadow: 2px 2px 3px #036e6e;
+  border: none;
+  border-radius: 5px;
+  margin-left: 0.5rem;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+.gelir .gelir-btn:hover {
+  box-shadow: none;
+}
+
+.table {
+  margin-top: 1rem;
+}
+.table button {
+  border: none;
+}
+
+.calculation {
+  width: 40%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin: 0 60%;
+}
+.calculation div {
+  height: 40px;
+  border: 0.1px solid green;
+  text-align: end;
+  font-weight: bolder;
+  padding-top: 0.5rem;
+  padding-right: 0.5rem;
+}
+.calculation .cal-gelir-text, .calculation .cal-gelir, .calculation .cal-kalan-text, .calculation .cal-kalan {
+  background-color: #c4e2e2;
+}
+
+.clear-btn {
+  width: 150px;
+  margin: 1rem auto;
+  background-color: #004444;
+  border: none;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 10px;
+}/*# sourceMappingURL=main.css.map */

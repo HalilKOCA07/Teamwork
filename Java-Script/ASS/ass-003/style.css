@@ -1,0 +1,27 @@
+#cardDiv img{
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px aqua;
+    width: 80%;
+    height: 80%;
+    text-align: center;
+    transition: all 1s;
+}
+
+#cardDiv img:hover{
+    width: 90% !important;
+    height: 90% !important;
+}
+
+.btn{
+    color: white;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+    transition: all 0.5s;
+    box-shadow: 2px 2px 10px;
+}
+
+.btn:hover{
+    color: black;
+    background-color: #dda0a0;
+}
