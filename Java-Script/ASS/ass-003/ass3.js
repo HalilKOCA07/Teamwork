@@ -5,10 +5,6 @@ const tarih = document.getElementById("tarih");
 const getBtnDiv = document.getElementById("get-btn");
 
 
-
-
-
-
 const getCats = async () => {
   try {
     const res = await fetch(

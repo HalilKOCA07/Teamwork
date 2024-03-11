@@ -1,0 +1,47 @@
+.female{
+    background-image: url(https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcnhjdzBmZHZyNDYwdzJiZXZ4eWhiNHduOWt0Nm5seTdva2t5ejY2biZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/4knozU8q9AXvpod9qy/giphy.gif);
+    background-position: center;
+    background-size: cover;
+}
+
+.male{
+    background-image: url(https://res.cloudinary.com/practicaldev/image/fetch/s--z_y4wDUd--/c_imagga_scale,f_auto,fl_progressive,h_420,q_66,w_1000/https://thepracticaldev.s3.amazonaws.com/i/n9b2p3j0h1mdqvms3ogc.gif);
+    background-position: center;
+    background-size: cover;
+}
+
+.female-color{
+    color: blueviolet;
+}
+
+button{
+    height: 40px;
+    width: 150px;
+    color: aliceblue;
+    background-color: blueviolet;
+    border: none;
+    border-radius: 10px;
+    font-weight: bolder;
+    
+
+}
+
+.btn-female{
+    background-color: rgb(146, 60, 227);
+}
+.btn-female:hover{
+    background-color: rgb(40, 12, 66);
+}
+
+
+.btn-male{
+    background-color: rgb(40, 12, 66);
+}
+.btn-male:hover{
+    background-color: rgb(146, 60, 227);
+}
+
+.container{
+    padding: 2rem;
+
+}
