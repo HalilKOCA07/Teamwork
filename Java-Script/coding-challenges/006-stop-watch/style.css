@@ -1,0 +1,40 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: bold;
+    flex-direction: column;
+    
+}
+
+button{
+    width: 120px;
+    height: 35px;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: aliceblue;
+    border: none;
+    box-shadow: 2px 2px 8px rgb(98, 97, 97);
+    margin: 1rem;
+}
+
+#stop{
+    background-color: brown;
+    transition: all .5s;
+}
+#stop:hover{
+    background-color: #eca0a0;
+    box-shadow:none
+}
+
+#clear{
+    background-color: #eca0a0;
+    transition: all .5s;
+}
+
+#clear:hover{
+    background-color: brown;
+    box-shadow:none
+}
