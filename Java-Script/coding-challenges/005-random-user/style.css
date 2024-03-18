@@ -22,17 +22,15 @@ button{
     border: none;
     border-radius: 10px;
     font-weight: bolder;
-    
-
 }
 
 .btn-female{
     background-color: rgb(146, 60, 227);
 }
+
 .btn-female:hover{
     background-color: rgb(40, 12, 66);
 }
-
 
 .btn-male{
     background-color: rgb(40, 12, 66);
@@ -43,5 +41,4 @@ button{
 
 .container{
     padding: 2rem;
-
 }

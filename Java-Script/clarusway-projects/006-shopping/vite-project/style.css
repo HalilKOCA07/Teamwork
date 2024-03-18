@@ -1,0 +1,33 @@
+#pills-tabContent img{
+    width: 100%;
+    height: 250px;
+}
+
+.justify-content-center{
+    padding: 1rem;
+}
+
+.card-text{
+    hyphens: auto;
+    display: -webkit-box;
+-webkit-line-clamp: 3;
+-webkit-box-orient: vertical;
+overflow: hidden;
+}
+
+.container button{
+    width: 100px;
+    height: 35px;
+    flex-wrap: nowrap;
+}
+
+#deneme{
+    width: 100px;
+    height: 50px;
+}
+
+#v-pills-tabContent img{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
