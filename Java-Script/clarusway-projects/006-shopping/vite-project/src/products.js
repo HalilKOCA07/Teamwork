@@ -1,25 +1,32 @@
 
+import { getAllButtons } from "./buttons"
+import { setProduct } from "./storage";
+import  { getProduct } from "./storage"
+import { setCart } from "./storage";
+
 
 const allProducts = document.querySelector("#v-pills-all");
 const motorProduct = document.getElementById("pills-motor")
 const containerProducts = document.getElementById("pills-tabContent");
 const productBox = document.querySelector(".product-box");
 const detailBtn = document.querySelector(".btn-detail");
-const addBtn = document.getElementById("add-card-btn");
+const addBtn = document.querySelector(".add-btn");
 
-let btnDOM = [];
-let cart = [];
+
 
 window.addEventListener("load", () => {
-  getProducts()
-})
+    getProducts()
+      getAllButtons()
+
+
+  })
+
 
 export const getProducts = async () => {
   try {
     const responsive = await fetch(
       "https://anthonyfs.pythonanywhere.com/api/products/"
     );
-    console.log(responsive);
 
     //Error Handing
     if (!responsive.ok) {
@@ -29,8 +36,13 @@ export const getProducts = async () => {
     console.log(dataProducts);
     //function gelecek
     showProducts(dataProducts);
+    getAllButtons();
+    setProduct(dataProducts);
+    getProduct();
+    setCart()
+    
   } catch (error) {
-    containerProducts.innerHTML = `<img src="https://www.alastyr.com/blog/wp-content/uploads/2020/11/windows-hatasi.jpg" alt="" />`;
+    console.log(error);
   }
 };
 
@@ -46,7 +58,7 @@ const showProducts = (product) => {
           <h5 class="card-title">${title}</h5>
           <p class="card-text">${description}</p>
           <p class="card-price"><span>Fiyat:</span> ${price}</p>
-        <button id="add-card-btn">Add to cart</button>
+        <button class="add-btn" id="${id} type="button">Add to cart</button>
 
         <button type="button" id="${id}" class="btn btn-primary btn-detail" data-bs-toggle="modal" data-bs-target="#exampleModal">See Details</button>
         </div>
@@ -54,21 +66,3 @@ const showProducts = (product) => {
         `;
   });
 };
-
-const getButtons = () => {
-  const buttons = [...document.querySelectorAll(".add-card-btn")];
-  btnDOM = buttons;
-
-  buttons.forEach((button) => {
-    let id = button.id;
-    let inCart = cart.find((item) => item.id === id);
-    if (inCart) {
-      button.setAttribute("disabled", "disabled");
-      button.style.opacity = ".3";
-    }
-  });
-};
-
-document.addEventListener("DOMContentLoaded", () => {
-  getButtons();
-});
